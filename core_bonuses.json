@@ -1,0 +1,92 @@
+[
+  {
+    "id": "KIE_AVS",
+    "name": " ARTIFICIAL VASCULAR SYSTEMS",
+    "source": "KIE",
+    "effect": "<div>As a Protocol, you may take 2 Heat to activate one of the following effects:</div><div>- You gain Overshield equal to 3 + your GRIT, or increase existing Overshield by that amount. You may not have more Overshield than half your Maximum HP.</div><div>- You clear a condition that wasn’t caused by one of your systems, talents, traits, etc.</div><div>Additionally, when you rest, you regain all missing HP automatically and without REPAIRS.</div>",
+    "description": "<div>Rubbleborn technology blends the biological with the mechanical. Mechs of their design often have their own organs, including hearts, kidneys, and musculature made from nanites. Chemicals equivalent to blood allow self-healing and a sort of “immune system” that can slowly repair non-crippling damage, increasing its endurance in the field, though speeding up its metabolism in this way generates a large amount of waste heat.</div>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "Activate Artificial Vascular Systems",
+        "activation": "Protocol",
+        "detail": "<div>As a Protocol, you may take 2 Heat to either gain Overshield equal to 3 + your GRIT (or increase existing overshield by that amount. In either case, you cannot have more Overshield than half your maximum HP.) or clear a condition affecting you, as long as the condition wasn't caused by one of your own systems, traits, talents, etc.</div>",
+        "cost": "2",
+        "pilot": false,
+        "synergy_locations": [
+          "scan"
+        ],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_hardlightchrysalis",
+    "name": "HARDLIGHT CHRYSALIS",
+    "source": "KIE",
+    "effect": "<div>At the start of a scene, you may grant Overshield equal to 2 + your GRIT to yourself and all allied characters within HiveMind range, or increase existing Overshield by that amount. Overshield gained or increased in this way cannot exceed a character’s max HP. A character can benefit from this effect only 1/Scene.</div><div>Additionally, whenever you rest or perform a full repair, your mech projects a faint field of protective energy within a burst 6 area, shielding you and your nearby allies from any dangerous weather conditions and other effects originating outside the area. No effect, attack or character can pass through the shield unless you allow it, and you can control the conditions inside this area however you please (temperature, moisture, light level, etc). When the Rest or Repair ends, or if you boot up your mech, the field dissipates. This field cannot be activated in any way during combat.</div>",
+    "description": "<div>Designed to accompany Rubbleborn pioneers in more hazardous conditions, the Hardlight Chrysalis creates a protective “shell” that can turn any hostile environment into a suitable atmosphere with comfortable conditions. The shell itself is the result of microscopic nano-cells projecting overlapping energy fields that constantly adapt wavelengths to ensure that no harmful radiation can enter. In environments with atmosphere, the nano-cells filter out toxic chemicals and can even improve air quality, while creating airtight environments in a vacuum and also blocking dangerous wavelengths of the EM spectrum. The power required to keep this field up, added to the necessity of exposing most of the frame's inner systems, creates a considerable risk when deploying the chrysalis. Because of this, it cannot be activated during high-intensity or combat situations, but residual nano-cells can act as an ablative layer over existing plating.</div>",
+    "mounted_effect": ""
+  },
+  {
+    "id": "kie_scavengerinstinct",
+    "name": "SALVAGER'S INSTINCT",
+    "source": "KIE",
+    "effect": "<div>When a non-grunt hostile character within Range 3 is reduced to 0 HP, you may Salvage some of its components as a Reaction. Each Salvage option can only be selected once per Scene.</div><div>- <strong>Salvage Supplies: </strong>Regain 1 spent Repair or 1 spent Limited Charge of a single Limited system or weapon.&nbsp;</div><div>- <strong>Salvage Plating: </strong>The next time you take Damage from a hostile character, you gain Resistance to that damage.</div><div>- <strong>Salvage Data-Drives: </strong>All other Hostile Characters lose Hidden until the start of your next turn, then you may Scan and Lock On to the nearest hostile character as a part of this reaction (choose a single character if there is more than one).</div>",
+    "description": "<div>Spare materials are sparse on Jovo's surface, and most settlements have barely enough supplies to stay in a working state due to the combined threats of dust storms, bandit attacks and even the quality of these elements. The Rubblefolk managed to manufacture and store enough supplies to ensure the development of their colonies, although they suffered the same once they stray away from their buried home. The Hive Builder Cadre developed a set of modifications able to adjust and retrofit a large number of components to a desired frame, with little to no performance variation, allowing Overground explorers to simply harvest the pieces of defeated bandits or otherwise incompatible supplies and modify them for their use in maintenance and construction efforts.</div>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "Scavenger's Instincts",
+        "activation": "Reaction",
+        "detail": "<div> You may Salvage some of its components, choosing one of the following Salvage options. Each Salvage option can only be selected once per Scene.</div><div>- <strong>Salvage Supplies: </strong>Regain 1 spent Repair or 1 spent Limited Charge of a single Limited system or weapon.&nbsp;</div><div>- <strong>Salvage Plating: </strong>The next time you take Damage from a hostile character, you gain Resistance to that damage.</div><div>- <strong>Salvage Data-Drives: </strong>All other Hostile Characters lose Hidden until the start of your next turn, then you may Scan and Lock On to the nearest hostile character as a part of this reaction (choose a single character if there is more than one).</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "3/Scene",
+        "init": "",
+        "trigger": "A non-grunt character within Range 3 of you is reduced to 0 HP."
+      }
+    ]
+  },
+  {
+    "id": "kie_dni",
+    "name": "DIRECT NEURAL INTERFACE",
+    "source": "KIE",
+    "effect": "<div>Gain the \"Resilience\" reaction.</div>",
+    "description": "<div>A mech is more than just a machine to a Rubbleborn; Originally life-support equipment for the gestalt beings, these were for all intents and purposes their bodies. After the creation of Ambulatory Cores, some Rubbleborn retained this attitude, and continued to create advanced neural interfaces for use by non-Rubbleborn pilots. Similar to a Full-Subjectivity Sync used by SSC, the DNI allows a pilot's brain to directly control their mech, even overriding safety protocols in an \"Adrenaline Mode\".</div>",
+    "mounted_effect": "",
+    "actions": [
+      {
+        "name": "Resilience",
+        "activation": "Reaction",
+        "detail": "<div>Take 1 heat, then gain a different condition for the same duration instead. If you would become Stunned, you instead become Jammed. If you would become Jammed, you instead become Impaired. If you would become Immobilized, you instead become Slowed. This reaction cannot be used on the same effect more than once.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>You would become Stunned, Jammed or Immobilized by an effect other than your own systems, talents, traits, etc.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_srh",
+    "name": "SELF-PERPETUATING SYSTEMS",
+    "source": "KIE",
+    "effect": "<div>Choose one system or weapon. If it is destroyed, it is automatically repaired at the end of the Scene for no Repair cost. This can only occur an amount of times equal to half your GRIT each mission, and occurs even when rebuilding a Destroyed mech.</div><div>If the system is a Deployable or Drone, and the Deployable or Drone was damaged or destroyed, it is automatically restored to full HP at the end of the scene. This does not count against the times Self-Perpetuating Systems can trigger.</div>",
+    "description": "<div>Designed for deep-core and deep-space operations, modifications of specialized nano-cells can allow a component to be regrown rapidly. The system requires extreme amounts of backup energy and material, but proves to be essential on month-long missions outside of established supply networks.</div>",
+    "mounted_effect": ""
+  },
+  {
+    "id": "kie_cim",
+    "name": "COLONY INTERFACE MODULES",
+    "source": "KIE",
+    "effect": "<div>At the start of a mission or after a Full Repair, choose one weapon and one system that currently do not have the “Eusocial” Tag. These gain the “Eusocial” Tag until your next Full Repair.</div><div>Additionally, all of your “Eusocial” weapons or systems can be activated by allies within Range 5 and Line of Sight.</div>",
+    "description": "<div>Rubblefolk often require constant cooperation during mining operations, the Colony Interface Module is a relatively simple modification that allows close-connection remote use of certain equipment by nearby allies.</div>",
+    "mounted_effect": ""
+  }
+]

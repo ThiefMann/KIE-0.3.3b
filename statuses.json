@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Attached",
+    "type": "Status",
+    "exclusive": "",
+    "terse": "Latch to a bigger character to ride them around.",
+    "effects": "<div>When a character or object attaches to another character or object that is at least one size larger than them, they become tethered by strong cables, magnetic forces, controlled gravitational pulls or other means, occupying the same space as the bigger character, unless mentioned otherwise. When the bigger character or object moves (including involuntary movement), the smaller one copies the movement while ignoring reactions and engagement, as long as adjacency can be maintained. Attached characters may use their host’s spaces for judging line of sight, range, and threat, but any effects caused from their host’s current spaces (such as Dangerous Terrain) are also applied to the Attached character, even if they are not in that space. The Attachment lasts until one of the characters becomes Stunned, knocked prone or the adjacency is broken. A character can only attach to a single host, and a character may host characters of a combined size not larger than its own size at any given time.</div>",
+    "icon_url": "https://cdn.discordapp.com/attachments/1005579364689264726/1079966659177095218/R.png"
+  }
+]

@@ -1,0 +1,645 @@
+[
+  {
+    "id": "kie_type8",
+    "name": "Type-8 Combat Shield",
+    "source": "KIE",
+    "license": "SCARAB",
+    "license_level": 2,
+    "description": "<div><em>Originally designed as a reinforcement for solar panels, failure to contain the excess energy led experimental engineers to abandon the project. It is unknown how the discarded prototypes reached Scarab’s hands, but the now designated Type-8 Combat Shield serves as a close-quarters option able to capitalize the excess flow of energy within the frame to create controlled blasts in response to physical trauma. Models issued to other frames are fitted with the same nanite colonies present in the Scarab hardware, granting them the ability to generate small defensive barriers over the Type-8’s surface</em></div>",
+    "effect": "<div>Gain the “Retribution” reaction.</div>",
+    "on_hit": "You or an adjacent allied character gain 2 Overshield",
+    "mount": "Main",
+    "type": "Melee",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "sp": "1",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Retribution",
+        "activation": "Reaction",
+        "detail": "<div>The attacker must make a Hull Save. On a fail, they take AP energy damage equal to your current Overshield (up to 3 + GRIT), or half as much on a pass.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/Round",
+        "init": "",
+        "trigger": "You are targeted by a melee attack while you have Overshield."
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_type12",
+    "name": "Type-12 Particle Manipulator",
+    "source": "KIE",
+    "license": "SCARAB",
+    "license_level": 3,
+    "description": "<div><em>The Particle Manipulator was originally a mining scanner, but modifications done to the tool allowed it to create an energy wavelength and catalytic magnetic pulse. This can be used to compact ores, or used for extraction in parts of veins that are more delicate. Similar technology was used to create the Inorganic Particle Disruptor. In combat, the manipulator is also able to compress and stagger mechanical targets for a short time.</em></div>",
+    "on_crit": "Your target must succeed a Systems save or become Immobilized and Jammed until the end of their next turn. A character can only become Jammed by this effect 1/scene.",
+    "mount": "Main",
+    "type": "Rifle",
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d3+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 8
+      }
+    ],
+    "sp": "1",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Safeguard",
+        "activation": "Reaction",
+        "detail": "<div>If the attacker is within range 8 and line of sight, they must make a Systems Save. On a fail, they become Impaired, Slowed, and are unable to take Reactions until the end of their next turn.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/Round",
+        "init": "",
+        "trigger": "You or an allied character within Sensors are targeted by a ranged attack."
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_banebless",
+    "name": "Bane/Bless Nexus",
+    "source": "KIE",
+    "license": "LONGHORN",
+    "license_level": 1,
+    "description": "<div><em>The heavily modified Bane/Bless nanite pattern differs from other automated munitions used by the Rubblefolk, running a binary-state code that grants it the versatility of a frame’s full computer network.</em></div><div><em>Upon a successful breach, the Bane/Bless code is able to briefly control the target’s system, allowing the user to further sabotage or transfer data to allies. Whether this was developed for combat or to further enforce the Longhorn’s role as a chess arbiter is unknown.</em></div>",
+    "on_crit": "<div>Choose one effect:&nbsp;</div><ul><li><div>The target becomes Impaired until the end of their next turn.</div></li><li><div>You may Bolster an ally within range as a Free Action.</div></li></ul>",
+    "mount": "Main",
+    "type": "Nexus",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "sp": "1",
+    "tags": [
+      {
+        "id": "tg_accurate"
+      },
+      {
+        "id": "tg_smart"
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_plasma_drill",
+    "name": "Plasma Drill",
+    "source": "KIE",
+    "license": "FIREFLY",
+    "license_level": 1,
+    "description": "<div><em>A repurposed mining implement, the Plasma Drill is exactly what it sounds like: an unsafe plasma projector capable of creating a concentrated plasma beam for use in the mines.</em></div>",
+    "on_hit": "Heat generated by this weapon’s Overkill tag is also dealt to the target as bonus heat.",
+    "mount": "Main",
+    "type": "Cannon",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Line",
+        "val": "5"
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "tg_heat_self",
+        "val": "1"
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_fart",
+    "name": "Volatile Exhaust",
+    "source": "KIE",
+    "license": "FIREFLY",
+    "license_level": 2,
+    "description": "",
+    "effect": "<div>This weapon ignores ranged penalties from engagement.</div>",
+    "on_hit": "<div>This weapon deals energy damage equal to half your current heat, up to a maximum of 4 energy damage.</div>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "0-4"
+      }
+    ],
+    "range": [
+      {
+        "type": "Burst",
+        "val": "1"
+      }
+    ],
+    "sp": 0,
+    "profiles": []
+  },
+  {
+    "id": "kie_laser_cutter",
+    "name": "Laser Cutter",
+    "source": "KIE",
+    "license": "FIREFLY",
+    "license_level": 3,
+    "description": "<div><em>The Laser Cutter was used by many Jovo miners to salvage lost or damaged equipment. The Rubblefolk have adapted and optimized it, increasing its thermal output and accuracy for military specifications.</em></div>",
+    "on_hit": "<div>If the target is already suffering from Burn, damage dealt by this weapon cannot be reduced in any way.</div>",
+    "on_crit": "<div>You may take 1 additional Heat to deal +1d6 bonus Burn.</div>",
+    "mount": "Heavy",
+    "type": "CQB",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      },
+      {
+        "type": "Burn",
+        "val": "1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": "5"
+      },
+      {
+        "type": "Threat",
+        "val": "3"
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "val": "2"
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_pickaxe",
+    "name": "Mandible Power-Pickaxe",
+    "source": "KIE",
+    "license": "STAG",
+    "license_level": 1,
+    "description": "<div><em>Used to mine, extract, transport and crush pieces of mineral ore or cave in debris, the Power Pickaxe is a class of mining equipment issued to almost all Rubble excavation crews, used mostly to transport valuable materials back for collection, while also being able to dispose of less desirable minerals.</em></div>",
+    "on_hit": "<div>This weapon deals 10 AP kinetic damage against terrain pieces, deployables, and objects instead of the normal damage.</div>",
+    "mount": "Heavy",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": "1"
+      },
+      {
+        "type": "Cone",
+        "val": "3"
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_overkill"
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_lucanidae",
+    "name": "Lucanidae Cargo Manipulator",
+    "source": "KIE",
+    "license": "STAG",
+    "license_level": 3,
+    "description": "<div><em>An extendable armature tipped with a grasping claw, the “Lucanidae” Cargo Manipulator is designed for moving heavy objects at a distance. It is held together by rigid nano-ligaments, while artificial musculature operates the internal skeleton.</em></div>",
+    "on_crit": "<div>Pull your target to a free space adjacent to you, or as close as possible. If they end this movement adjacent to you, you may Grapple or Ram them as a free action immediately after the attack resolves.</div>",
+    "mount": "Superheavy",
+    "type": "Melee",
+    "cost": 1,
+    "barrage": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": "3"
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "kie_eusocial"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Lucanidae Uppercut/Bust Down",
+        "activation": "Free",
+        "detail": "<div>If a character is pulled adjacent to you by the Lucanidae Cargo Manipulator, you may Grapple or Ram them immediately after the attack resolves.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_hiexdet",
+    "name": "HI-EX Det Launcher",
+    "source": "KIE",
+    "license": "HERCULES",
+    "license_level": 1,
+    "description": "<div><em>A binary-chamber missile launcher, the HI-EX Det Launcher is a rudimentary form of weapon engineering used to combine two modes of payload delivery under a single frame. Light munitions can be fired through an adjustable mechanism that reduces the diameter of the chamber and barrel, allowing a faster reload time at the cost of power; while the dilated mode allows heavier munitions to be delivered when needed, at the expense of a longer delay between munition cycling.</em></div>",
+    "on_attack": "<div></div>",
+    "mount": "Main",
+    "type": "Launcher",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Direct Fire",
+        "description": "",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "8"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          }
+        ]
+      },
+      {
+        "name": "HI-EX Shot",
+        "description": "",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d6"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "8"
+          },
+          {
+            "type": "Blast",
+            "val": "1"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_loading"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_det_battery",
+    "name": "PD-Deterrence Battery",
+    "source": "KIE",
+    "license": "HERCULES",
+    "license_level": 2,
+    "description": "<div><em>A necessity on excavation sites near territorial megafauna, the Point-Defense Deterrence Battery proves a vital piece of equipment not only for the Mining Rig’s survival, but for the entire crew on board as well. Concentrated volleys are able to produce incredible force, and are known to send particularly aggressive invaders flying away if they survive the explosive blast.</em></div>",
+    "on_attack": "<div></div>",
+    "on_crit": "<div>This weapon’s Knockback tag increases to 3.</div>",
+    "mount": "Main",
+    "type": "Launcher",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Area Denial Mode",
+        "description": "",
+        "effect": "<div>This weapon can be fired on either the Area Denial or Focused Blast mode.</div>",
+        "on_crit": "<div>This weapon’s Knockback tag increases to 3.</div>",
+        "type": "",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d3+1"
+          }
+        ],
+        "range": [
+          {
+            "type": "Burst",
+            "val": "2"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": "1"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": "1"
+          }
+        ]
+      },
+      {
+        "name": "Focused Blast Mode",
+        "description": "",
+        "effect": "<div>This weapon can be fired on either the Area Denial or Focused Blast mode.</div>",
+        "on_crit": "<div>This weapon’s Knockback tag increases to 3.</div>",
+        "type": "Launcher",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Explosive",
+            "val": "1d3+1"
+          }
+        ],
+        "range": [
+          {
+            "type": "Cone",
+            "val": "5"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_knockback",
+            "val": "1"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_padrino",
+    "name": "T3G/P PADRINO",
+    "source": "KIE",
+    "license": "HERCULES",
+    "license_level": 3,
+    "description": "<div>Lovingly nicknamed the “Godfather” by its users, the Type-3 Grenade/Projector is a simplistic piece of kit designed to be used to clear large cave-ins, while more militarized models are used to clear entire megafauna dens with fragmentation charges. With the use of “Quick/Switch” structure, both modes can be fitted into a single frame, requiring only minimal modifications.</div>",
+    "mount": "Superheavy",
+    "type": "Cannon",
+    "cost": 1,
+    "barrage": true,
+    "sp": 0,
+    "profiles": [
+      {
+        "name": "Uncharged",
+        "description": "",
+        "effect": "<div>As a Quick Action, you may focus excess energy directly into the Padrino’s energy feed to charge it. At the start of any of your turns while it is charged, it has the Charged profile.</div>",
+        "on_attack": "<div>Terrain pieces, objects and deployables are hit automatically and take 20AP Energy damage instead of the normal damage.</div>",
+        "type": "Cannon",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6"
+          },
+          {
+            "type": "Burn",
+            "val": "2"
+          }
+        ],
+        "range": [
+          {
+            "type": "Range",
+            "val": "10"
+          }
+        ],
+        "actions": [
+          {
+            "name": "Charge",
+            "activation": "Quick",
+            "detail": "<div>Charge the Padrino. At the start of any of your turns while it is charged, it has the Charged profile.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_accurate"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": "1"
+          }
+        ]
+      },
+      {
+        "name": "Charged",
+        "description": "",
+        "effect": "<div>This weapon loses its charge when you Barrage with it, when you disperse its charge as a free action, or when you become STUNNED or SHUT DOWN.</div>",
+        "on_attack": "<div>You may treat this weapon’s Line range as 3 spaces wide, with at least one space of the centre line being adjacent to you. Terrain pieces, objects and deployables are hit automatically and take 40AP Energy damage instead of the normal damage.</div>",
+        "type": "Cannon",
+        "cost": 1,
+        "damage": [
+          {
+            "type": "Energy",
+            "val": "2d6"
+          },
+          {
+            "type": "Burn",
+            "val": "5"
+          }
+        ],
+        "range": [
+          {
+            "type": "Line",
+            "val": "15"
+          }
+        ],
+        "tags": [
+          {
+            "id": "tg_arcing"
+          },
+          {
+            "id": "tg_ordnance"
+          },
+          {
+            "id": "tg_loading"
+          },
+          {
+            "id": "tg_heat_self",
+            "val": "3"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_bugshot",
+    "name": "Bugshot Shredder",
+    "source": "KIE",
+    "license": "WEEVIL",
+    "license_level": 1,
+    "description": "<div><em>Usually a wrist-mounted shrapnel-cannon, the Bugshot Shredder is an oddity within the typical Weevil equipment. It is unknown what use this tool would serve, some indicating the smaller frames would need such equipment to defend themselves from pests that predate within the ambrosia farms.</em></div>",
+    "mount": "Auxiliary",
+    "type": "CQB",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": "3"
+      }
+    ],
+    "sp": 0,
+    "tags": [
+      {
+        "id": "tg_limited",
+        "val": 5
+      }
+    ],
+    "profiles": []
+  },
+  {
+    "id": "kie_scrapper_nexus",
+    "name": "Scrapper Nexus",
+    "source": "KIE",
+    "license": "WEEVIL",
+    "license_level": 2,
+    "description": "<div><em>Built for scrapping existing equipment, Scrapper Nexuses hold colonies of drones and nanites that break down organic and metallic materials alike, to later be synthesized into usable components.</em></div>",
+    "on_crit": "<div>Your target must Succeed on a Hull save or take maximum possible damage (including bonus damage). Pass or fail, you regain 1 spent Repair.</div>",
+    "mount": "Main",
+    "type": "Nexus",
+    "cost": 1,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Kinetic",
+        "val": "1d3+1"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": "10"
+      }
+    ],
+    "sp": "2",
+    "tags": [
+      {
+        "id": "tg_seeking",
+        "val": null
+      },
+      {
+        "id": "tg_smart",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 3
+      }
+    ],
+    "profiles": []
+  }
+]

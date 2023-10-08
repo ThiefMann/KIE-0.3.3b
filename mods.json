@@ -1,0 +1,53 @@
+[
+  {
+    "id": "kie_secondpayload",
+    "name": "Secondary Payload",
+    "source": "KIE",
+    "license": "HERCULES",
+    "license_level": 1,
+    "effect": "<div>1/Round, on a hit you may expend a charge as a free action to activate its detonator and deal 1d3 Explosive Damage in a Blast 1 Radius zone centered on one target. Then, create two pieces of Size 1 Hard Cover or 1 piece of Size 2 Hard Cover in a free, adjacent space to the Blast 1 Radius. This cover has an evasion of 5 and 10HP per Size.</div>",
+    "sp": "2",
+    "description": "<div><em>Known to make use of every last piece of available equipment, Rubblefolk are known to fire munitions inside a modified casing meant to separate from the main projectile mid-flight, increasing the blunt force of the impact.</em></div>",
+    "allowed_types": [
+      "Launcher",
+      "Cannon",
+      "Nexus"
+    ],
+    "allowed_sizes": [
+      "Auxiliary",
+      "Main",
+      "Heavy",
+      "Superheavy"
+    ],
+    "restricted_types": [
+      "Rifle",
+      "CQB",
+      "Melee"
+    ],
+    "restricted_sizes": [],
+    "added_damage": [],
+    "added_range": [],
+    "added_tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "1"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Detonate Secondary Payload",
+        "activation": "Free",
+        "detail": "<div>Activate the Secondary Payload detonator and deal 1d3 Explosive Damage in a Blast 1 Radius zone centered on one target. Then, create two pieces of Size 1 Hard Cover or 1 piece of Size 2 Hard Cover in a free, adjacent space to the Blast 1 Radius.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  }
+]

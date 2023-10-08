@@ -1,0 +1,292 @@
+[
+  {
+    "id": "kie_Artisan",
+    "name": "Artisan",
+    "terse": "Remove some safety locks to give your systems more bang.",
+    "description": "<div><em>For Ghosts, what technology a Clan possesses is entirely through salvaging and heirlooms. A Clan's scrapsmith is trained through generations to create works of art from what would be considered junk to outsiders. For the Rubbleborn, each machine is grown and cultured into a unique specimen. Settlers may have settlements and trade with others beyond their horizon, but every piece of technology- be it mining equipment, moisture filters, or any other piece of kit- gains its own scars and quirks. All of these are more than the products of amateurs but built by artisans of a different caliber and training than the conventional definition.</em></div><div style=\"text-align: justify\"><em>Ghost, Settler, or Rubbleborn; it matters not who you are. You are not merely a pilot of a machine, but of a work of art.</em></div>",
+    "ranks": [
+      {
+        "name": "Personal Touch",
+        "description": "<div>When you print your mech or complete a Full Repair, you can print a Gadget. This is a Limited System with 2 charges that cannot be destroyed. When printing a Gadget, choose one from the following options: Spiked Plating, Improvised Jump Jets, Jury-Rigged Scramblers, Homebrewed Coolant.</div><div>At your GM’s discretion, you may design your own Gadget to use with this talent.</div>",
+        "special_equipment": [
+          "kie_gadget_spikes",
+          "kie_gadget_jets",
+          "kie_gadget_scramblers",
+          "kie_gadget_coolant"
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Tune Up",
+        "description": "<div>When using Personal Touch, you can install up to 2 different Gadgets on your mech.<br><br>Additionally, during a Rest or Full Repair, you may also choose to redirect the power feed and systems of your mech to specialize in one particular skill. Gain +1 Accuracy on all checks and saves made with one mech skill of your choice (HULL, AGILITY, SYSTEMS, ENGINEERING). This Accuracy lasts until you change the tuned-up mech skill.</div>",
+        "exclusive": false
+      },
+      {
+        "name": "Magnum Opus",
+        "description": "<div>When using Personal Touch, you can install up to 3 different Gadgets, and all of them gain one additional charge.</div>",
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "kie_Blacksmith",
+    "name": "Blacksmith",
+    "terse": "Specialize on field repairs and keeping your team in peak condition thanks to additional repairs.",
+    "description": "<div><em>The art of field repairs is not merely a luxury on Jovo, but a survival skill. With limited supplies, long delays for off-world shipping, and most of the extracted materials being sent offworld, Jovonians of all kinds have learned to make more with less.</em></div><div><em>Dedicated mechanics are known by many names, but the main title is \"Blacksmith\". You are one such Blacksmith: the soil of Jovo is your anvil, and the light of Tsarina is your hammer.</em></div>",
+    "ranks": [
+      {
+        "name": "Metalworker",
+        "description": "<div>You may use a Full Action to allow an adjacent ally to Stabilize as a reaction. When you do, they gain Overshield equal to 1d3+your Grit. If the target chooses to regain their HP, they may (at your discretion) expend one of your Repairs instead of their own.</div>",
+        "actions": [
+          {
+            "name": "Metalworks",
+            "activation": "Full",
+            "detail": "<div>You allow an adjacent ally to Stabilize as a reaction. They also gain Overshield equal to 1d3+your Grit and if the target chooses to regain their HP, they may (at your discretion) expend one of your Repairs instead of their own.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "First Response Repairs",
+        "description": "<div>At your discretion during rests, other characters can spend your Repairs to restore destroyed weapons and systems instead of their own.</div><div>Additionally, you may Stabilize an adjacent allied character as a Quick Action. Each Character can only benefit from this effect once per scene.</div>",
+        "exclusive": false
+      },
+      {
+        "name": "Good as New",
+        "description": "<div>Increase your Repair Cap by +2. Additionally, when you Stabilize an allied character, they may choose two secondary options instead of one, and Overshield granted by Metalworker increases to 1d6 + your GRIT.</div>",
+        "bonuses": [
+          {
+            "id": "repcap",
+            "val": "2",
+            "damage_types": [],
+            "range_types": [],
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "overwrite": false,
+            "replace": false
+          }
+        ],
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "kie_Legion",
+    "name": "Comraderie",
+    "terse": "Increase the firepower of your team with coordinated tactics and techniques.",
+    "description": "<div><em>HiveMind technology has been acquired by Chartered Companies and other factions on Jovo, and its capabilities for coordination have both combat and utility uses. While rolled out slowly and carefully, the link between small groups of individuals can allow for rapid and complex maneuvers to be pulled off with minimal training.</em></div><div><em>These \"Comrades” share a deep bond that goes more than merely psychological. Perhaps you were assigned a new partner, replacing a previous one, or you two have served side-by-side, and come Hell or high water, you will be as immovable as the earth under your feet.</em></div>",
+    "ranks": [
+      {
+        "name": "Squad Stabilizers",
+        "description": "<div>When you take this talent, choose another pilot (hopefully a PC, but NPCs are fine if your GM allows it) to be your Comrade. While adjacent to your comrade, ranged weapons of both characters gain Reliable 1 or increase the value of Reliable by 1 if the weapon already has that property. If both characters have this talent, they gain +1 Accuracy to the first ranged attack they make on their turn if they start their turn adjacent to each other.</div>",
+        "exclusive": false
+      },
+      {
+        "name": "Assisted Reload",
+        "description": "<div>Gain the Assisted Reload quick action.</div>",
+        "actions": [
+          {
+            "name": "Assited Reload",
+            "activation": "Quick",
+            "detail": "<div>If you are Adjacent to your Comrade, you can choose one of their Mounts. All Loading Weapons on that mount are reloaded at the start of their next turn.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Pack Hunters",
+        "description": "<div>Gain the \"Double Tap\" reaction.</div>",
+        "actions": [
+          {
+            "name": "Double Tap",
+            "activation": "Reaction",
+            "detail": "<div>You may Skirmish against that character, dealing half damage, heat or burn on a hit.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "<div>Your Comrade hits a character that doesn’t have cover from your position.</div>"
+          }
+        ],
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "kie_martyr",
+    "name": "Martyr",
+    "terse": "Turn yourself into an icon to inspire others when despair strikes down.",
+    "description": "<div><em>What does it mean to be a soldier? What does it mean to fight? For some, they fight for glory, for honor, for duty. But you fight for a different reason: so that, even after you are long gone, one day, this violence will not be necessary. This violence will be gone, buried, just as you are. This world has seen enough blood spilled; let yours be the last.</em></div><div><em>The battlefield can be grim, slaughterhouses where good people die for reasons out of their control and interest; but there are kindred spirits that have sworn to make sure other pilots come home with their bones broken, faces scarred, but their minds at ease. These are the Martyrs, focused on keeping the morale high even in the most dire of situations, and you count among their ranks.</em></div>",
+    "ranks": [
+      {
+        "name": "So Others May Live",
+        "description": "<div>Gain the “So Others May Live” Reaction.</div>",
+        "synergies": [
+          {
+            "locations": [
+              "structure",
+              "stress"
+            ],
+            "detail": "<div>Whenever you lose <strong>Structure </strong>or <strong>Stress</strong>, all allied characters within line of sight gain Soft Cover until the end of your next turn.</div>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "actions": [
+          {
+            "name": "So Others May Live",
+            "activation": "Reaction",
+            "detail": "<div>Take 1d6 AP Kinetic damage, which cannot be reduced in any way. Then, impose +1 Difficulty on the attack, or +2 Difficulty if that character has suffered Structure damage or Reactor Stress in this scene.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "<div>An Allied Character within Range 5 and Line of Sight is targeted by an attack.</div>"
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Push Through",
+        "description": "<div>1/Scene, when you roll on the <strong>Structure </strong>or <strong>Stress </strong>damage table, you can delay the effects of the roll through pure devotion. You write down the damage as normal, but don't roll until the end of your next turn, at which point the result of the roll takes effect as normal.</div>",
+        "synergies": [
+          {
+            "locations": [
+              "stress",
+              "structure"
+            ],
+            "detail": "<div>1/Scene, when you roll on the <strong>Structure </strong>or <strong>Stress </strong>damage table, you can delay the effects of the roll through pure devotion. You write down the damage as normal, but don't roll until the end of the scene, at which point the result of the roll takes effect as normal.</div>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Sacrifice",
+        "description": "<div>Gain the Sacrifice Reaction.</div>",
+        "actions": [
+          {
+            "name": "Sacrifice",
+            "activation": "Reaction",
+            "detail": "<div>They roll as normal, but you take any effects, conditions or statuses caused by the result instead. If the result is Mech Destruction, you become Stunned until the end of your next turn instead. If the result would be a Reactor Meltdown, you become Exposed instead. You may target an allied character with this reaction only 1/Scene.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "<div>An Allied Character within Line of Sight takes <strong>Structure </strong>or <strong>Stress </strong>damage but hasn't rolled on the <strong>Structure </strong>or <strong>Stress </strong>damage table yet.</div>"
+          }
+        ],
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "kie_shieldbearer",
+    "name": "Shieldbearer",
+    "terse": "Through heavy power redistribution and system improvements, your shield systems gained new defensive capabilities.",
+    "description": "<div>The best defense is a good offense; but who's responsible of mending the reckless cavaliers that risk their life with each lunge, pointblank shot or suicidal technique? The Shieldbearers are silent agents of each lancer squad, employing upgraded shields to mitigate as much damage as possible.</div>",
+    "ranks": [
+      {
+        "name": "Ubershield",
+        "description": "<div>1/round, if you would gain or grant <strong>Overshield</strong>, you can increase that amount by 1.</div>",
+        "synergies": [
+          {
+            "locations": [
+              "overshield"
+            ],
+            "detail": "<div>1/round, if you would gain or grant <strong>Overshield</strong>, you can increase that amount by 1.</div>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "exclusive": false
+      },
+      {
+        "name": "Crystal Aegis",
+        "description": "<div>When you gain Overshield, you can choose to reinforce one of your Mech Skills with the Aegis, receiving +1 Accuracy on all checks and saves that use the chosen Skill. This benefit lasts until you lose all Overshield.</div><div>You can use a Quick Action to change the chosen Mech Skill reinforced by the Aegis.</div>",
+        "exclusive": false
+      },
+      {
+        "name": "Disruptor Aegis",
+        "description": "<div>Gain the \"Negation Field\" reaction.</div>",
+        "synergies": [
+          {
+            "locations": [
+              "overshield",
+              "armor"
+            ],
+            "detail": "<div>While you have Overshield, your mech is infused with a Disruptor Aegis, granting you the following benefits:</div><ul><li><div>Bracing does not limit your actions on your next turn.</div></li><li><div>You gain +1 Armor, which can bring you above the limit of 4.</div></li></ul>",
+            "weapon_types": [],
+            "weapon_sizes": [],
+            "system_types": []
+          }
+        ],
+        "actions": [
+          {
+            "name": "Negation Field",
+            "activation": "Reaction",
+            "detail": "<div>If the target has <strong>Overshield</strong>, roll a d6. On a 5+, the attack automatically misses, and you cannot use this Reaction again until the start of your next turn. This doesn't stack with Invisibility.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": "<div>You or an Adjacent allied character are targeted by an attack.</div>"
+          }
+        ],
+        "exclusive": false
+      }
+    ]
+  },
+  {
+    "id": "kie_wrangler",
+    "name": "Wrangler",
+    "terse": "Employ a specialized, customizable drone during combat encounters.",
+    "description": "<div>The Soldier Drone has been recently introduced as one of GMS most promising self-piloting weapon platforms, available to anyone with the knowledge, time and resources to make full use of the drone's flexible capabilities.</div>",
+    "ranks": [
+      {
+        "name": "Loyal Companion",
+        "description": "<div>You are accompanied by a Soldier Drone that can be deployed or retrieved as a quick action. This Drone has enough space to fit a single AUX weapon available to you, which you choose when deploying the drone.  The weapon’s threat, cone, burst, line, blast and range is reduced to 3, unless already lower, if the weapon has the Unique property it can only be installed in either your mech or a soldier drone, not both, and any SP cost is subtracted from your mech’s SP limit (NOTE: This feature is unsupported by Comp/Con, instead you can write the weapons in the notes section of the Drone, creating custom counters for their limited uses, and accounting for SP accordingly). This weapon cannot be modified and doesn't benefit from your talents, traits or core bonuses.</div><div>You can use a protocol to order the drone to move up to its speed in a direction of your choosing. 1/round, when you score a critical hit against a target within the drone weapon’s range, you can order it to attack them as a reaction.</div>",
+        "integrated": [
+          "kie_soldier_drone_one"
+        ],
+        "exclusive": true
+      },
+      {
+        "name": "Specialized Design",
+        "description": "<div>When deployed, choose one of the following Configurations to grant a unique bonus to your Soldier Drone: Assault, Stealth, Recon or Maintenance.</div></div><ul><li><div>Assault: The drone’s mount is upgraded to a FLEX mount.</div></li></ul><ul><li><div>Stealth: The drone is permanently Invisible, and is able to Hide after it moves. </div></li></ul><ul><li><div>Recon: The drone gains a sensor range of 5, and you may order it to Scan instead of moving</div></li></ul><ul><li><div>Maintenance: At the end of your turn, a character adjacent to the drone of your choice may clear 1 Heat or gain 2 Overshield.</div></li></ul>",
+        "integrated": [
+          "kie_soldier_drone_two"
+        ],
+        "exclusive": true
+      },
+      {
+        "name": "Gemini",
+        "description": "<div>1/Mission, you can deploy two Soldier drones instead of one. Each of these drones can use a different configuration and set of weapons. You can give the same or different orders to each one of these drones, and the limit of the reaction attack increases to 2/round, one for each drone.</div>",
+        "integrated": [
+          "kie_soldier_drone_three"
+        ],
+        "exclusive": true
+      }
+    ]
+  }
+]

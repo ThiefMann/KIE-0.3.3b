@@ -1,0 +1,1205 @@
+[
+  {
+    "id": "kie_strengthinnumbers",
+    "name": "HiveMind Command: \"Strength In Numbers\"",
+    "source": "KIE",
+    "license": "SCARAB",
+    "license_id": "kie_scarab",
+    "license_level": 3,
+    "effect": "<div>Gain the “Strength In Numbers” reaction.</div><div>HiveMind Commands are not self-aware enough to enter a Cascade state. They are also unable to take control of a mech as a protocol.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "<div><em>Dubbed the “Scarab Handshake”, Hive protectors mastered a way to transfer and manifest shielding frequencies through short-range Hiveminds.</em></div>",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "kie_hivemind"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_no_cascade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Strength in Numbers",
+        "activation": "Reaction",
+        "detail": "<div>If the target has Overshield, you may activate one of the following effects:</div><div><strong>- Bulk. </strong>Their Armor increases by 1 (up to a maximum of 4) until the end of their next turn or until you use this reaction again.<br><strong>- Brilliance. </strong>They clear any amount of Heat up to an amount equal to their Overshield.<br><strong>- Bravery. </strong>They clear one condition that wasn’t caused by their own systems, traits, talents, etc.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>You or a willing ally within HiveMind range ends their turn.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_colonialstabilization",
+    "name": "Hivemind Command: \"Colonial Stabilization\"",
+    "source": "KIE",
+    "license": "WEEVIL",
+    "license_level": 3,
+    "effect": "<div>HiveMind Programs are not self-aware enough to enter a Cascade state.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "<div><em>HiveMind Entities given the “Colonial Stabilization” Command are able to quickly share and receive data from hurt squadmates, giving an incredibly detailed report of the damage to their companions in an effort to increase their survivability. Likewise, they are able to share these reports between automated repair subroutines to “sync”, allowing repair efforts to be improved upon thanks to the increase of available data processing power.</em></div>",
+    "tags": [
+      {
+        "id": "kie_hivemind"
+      },
+      {
+        "id": "tg_limited",
+        "val": "1"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_no_cascade"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Colonial Stabilization",
+        "activation": "Reaction",
+        "detail": "<div>Spend a charge, then apply one of the following effects:</div><ul><li><div>A character of your choice adjacent to the triggering character or yourself may take 2 heat to Stabilize as a reaction</div></li><li><div>The triggering character may choose to take any number of secondary options when Stabilizing.</div></li><li><div>The triggering character may choose both of the primary options when Stabilizing.</div></li></ul>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/encounter",
+        "init": "",
+        "trigger": "<div>You or an allied character within Hivemind range takes the Stabilize Action.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_amulet",
+    "name": "Khepler's Amulet",
+    "source": "KIE",
+    "license": "SCARAB",
+    "license_id": "kie_scarab",
+    "license_level": 1,
+    "type": "Tech",
+    "sp": "2",
+    "description": "<div><em>Built around an exotic, crystallized form of a solid catalyst only found in the depths of the Rubble, the “Kheper’s Amulet” originally started as a good-luck charm in early Rubblefolk society. It would take decades before the crystal’s dormant energy-manipulation properties were first discovered. A specialized housing unit was later developed by the Bismuth Cadre, which allows the channeling of specific frequencies- amplified by a unique strain of BULWARK nano-cells- for offensive and defensive uses, typically by launching a charged swarm of nano-cells.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Sunrise",
+        "activation": "Quick Tech",
+        "detail": "<div>Gain 1d3 Overshield (or increase existing Overshield by that amount), then transfer any or all of your Overshield to an allied character within Sensors.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Sunset",
+        "activation": "Quick Tech",
+        "detail": "<div>Choose either yourself or a willing allied character within sensor range and line of sight. The target loses all Overshield, and a hostile character adjacent to them must make a System save. On a fail, they take Explosive damage equal to the consumed Overshield (up to 6) and get knocked back 2 spaces. On a Success, they only take half damage and are knocked back only 1 space.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_friendship_shield",
+    "name": "COCOON-Class Energy Barrier",
+    "source": "KIE",
+    "license": "SCARAB",
+    "license_level": 2,
+    "effect": "<div></div>",
+    "type": "Shield",
+    "sp": "2",
+    "description": "<div><em>The most advanced piece of deployable cover native to the Rubblefolk, colloquially known as “Cocoon”, this energy projector is able to create a thin, flexible barrier of tangible light that reduces the velocity of projectiles and the radiation levels of plasma-based attacks that pass through it, even managing to segment itself to better cover the user and nearby allies.</em></div>",
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate COCOON-Class Energy Barrier",
+        "activation": "Quick",
+        "detail": "<div>When you activate this system, you create a Line 4 energy shield, 4 spaces high, in free spaces within line of sight and with at least 1 space adjacent to your mech.</div><div>Attacks that pass through the shield treat their target as having Soft Cover. If an attack deals any amount of energy, the target benefits from Hard Cover instead. While the shield is up, you become Slowed and gain the \"Defensive Matrix\" reaction. This barrier lasts until the end of your next turn.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Defensive Matrix",
+        "activation": "Reaction",
+        "detail": "<div>Take 1 heat and reduce the damage dealt by the attack by 1d6. If this reduces the damage to 0 or lower, the target of the triggering attack gains 2 Overshield, or increases existent Overwhield by 2.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "<div>Your COCOON-Class energy shield is active.</div>",
+        "trigger": "<div>An attack that passes through your COCOON-Class energy shield is hits you or an ally adjacent to you.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_stallion",
+    "name": "Stallion Module",
+    "source": "KIE",
+    "license": "LONGHORN",
+    "license_level": 1,
+    "type": "Tech",
+    "sp": "2",
+    "description": "<div><em>Bearing no relation to the HORUS Pegasus PG, the Stallion module was originally developed by mining crew supervisors as a safety measure, allowing quick correction of errors and swift response to megafauna encounters.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Ebony Unicorn",
+        "activation": "Quick Tech",
+        "detail": "<div>Choose one character within sensors. They may Grapple, Ram or Lock on as a Reaction.</div><div>A character can only be affected by Ebony Unicorn 1/round.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Ivory Pegasus",
+        "activation": "Quick Tech",
+        "detail": "<div>Choose one character within sensors. They may fly up to 4 spaces in any direction of their choosing as a Reaction. This movement ignores reactions and engagement.</div><div>A character can only be affected by Ivory Pegasus 1/round.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_bishop",
+    "name": "Voice of the Bishop",
+    "source": "KIE",
+    "license": "LONGHORN",
+    "license_level": 2,
+    "type": "Tech",
+    "sp": "3",
+    "description": "<div><em>Hive Speakers don’t have favorites, they seek to help every crew member under their supervision, allowing them to reach their full potential. Nothing more than encouraging words implanted within malleable code, “Voice of the Bishop” subroutines deviate some of the processing restraints of the target towards the user, allowing the target to achieve peak efficiency for as long as the data transfer stays up.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Knighthood",
+        "activation": "Full Tech",
+        "detail": "<div>Choose one allied character within sensors. Until the end of the scene, 1/round, they may Grapple or Ram as a free action.</div><div>There can only be 1 character under the effects of Knighthood at any given scene, if a second character benefits from this effect, it ceases on the previous one.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Priesthood",
+        "activation": "Full Tech",
+        "detail": "<div>Choose one allied character within sensors and line of sight. Until the end of the scene, 1/round, they may Lock On or Bolster as a free action. </div><div>There can only be 1 character under the effects of Priesthood at any given scene, if a second character benefits from this effect, it ceases on the previous one.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_white_tower",
+    "name": "White Tower’s Barrier",
+    "source": "KIE",
+    "license": "LONGHORN",
+    "license_level": 2,
+    "type": "Tech",
+    "sp": "2",
+    "description": "<div><em>Despite its intangibility, the hivemind is still a system that requires constant maintenance and upkeep. Hive Speakers shared the methods used to keep the Hivemind within efficient standards to the KIE engineers, which quickly began to modify it in an effort to develop a more efficient damage response reinforcement unit.</em></div><div><em>Upon presenting this new response system to the Hive Speakers, it took them approximately 54 minutes to develop their own version, the “White Tower Barrier”, turning the presented version obsolete.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_shield"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Activate White Tower's Barrier",
+        "activation": "Quick Tech",
+        "detail": "<div>Choose one adjacent allied character to cover them with a faint digital barrier until adjacency is broken. While the barrier is up, you gain the Divine Intervention reaction.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Divine Intervention",
+        "activation": "Reaction",
+        "detail": "<div>You may Bolster the triggering character or apply Lock On to the attacker. This reaction resolves before the triggering effect.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": "<div>A character covered by your White Tower Barrier is forced to make a save or check by an enemy.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_hivemind_rallyingcry",
+    "name": "HiveMind Command: Incantations of the Underking",
+    "source": "KIE",
+    "license": "LONGHORN",
+    "license_id": "kie_longhorn",
+    "license_level": 3,
+    "effect": "<div>Gain the “Favored by Fate” reaction.</div><div>HiveMind Commands are not self-aware enough to enter a Cascade state. They are also unable to take control of a mech as a protocol.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "<div><em>The Underking was known for his might, stoicism and unquestionable decrees. Yet their followers still remember the way he could cultivate and augment the inner potential of everyone who heard his words of ancient wisdom.</em></div>",
+    "tags": [
+      {
+        "id": "kie_hivemind"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_no_cascade",
+        "val": null
+      }
+    ],
+    "actions": [
+      {
+        "name": "Favored by Fate",
+        "activation": "Reaction",
+        "detail": "<div>If they are under the effect of the Bolster tech action, they may consume the Bolster to roll the d20 twice and choose either result. A character can benefit from this reaction only 1/scene.&nbsp;</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>An allied character makes an attack, check or save.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_strategist",
+    "name": "Master Strategist Subcommands",
+    "source": "KIE",
+    "license": "LONGHORN",
+    "license_level": 3,
+    "type": "Tech",
+    "sp": "3",
+    "description": "<div><em>The Master Strategist Subcommands are a compact version of more sophisticated Hivemind Commands, only able to be installed with a rigorous network improvement of the main user. This advanced code is unstable but capable of pushing a mech beyond its usual limits under the right circumstances.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Gambit",
+        "activation": "Quick Tech",
+        "detail": "<div>Choose one allied character within sensors and line of sight with two or more enemy characters within range 3 of them. The target may immediately Skirmish once against each of the surrounding enemies, dealing half damage, heat and burn on hit as a reaction. The chosen allied character is then Jammed until the end of their next turn.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Check-Mate",
+        "activation": "Quick Tech",
+        "detail": "<div>Choose one enemy character within sensors and line of sight with two or more of your allies within range 3 of them. The chosen enemy character must succeed on a System save or be Shredded and Jammed. If they succeed, they instead may clear up to two conditions of their choice. A character can be Shredded and Jammed by this action only 1/Scene.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_flickering_flames",
+    "name": "Flickering Flames",
+    "source": "KIE",
+    "license": "FIREFLY",
+    "license_level": 1,
+    "type": "Tech",
+    "sp": "2",
+    "description": "<div><em>Part of the standard modification of the “Forge Bearers”, the Pilot Flame Flickering Syphon (or Flickering Flames for short), makes use of advanced thermal insulation projectors that quite literally manipulate the plasma of most flames as if they were clay under a frame’s hands.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Flickering Flames",
+        "activation": "Quick Tech",
+        "detail": "<div>Select a character within Sensors and Line of Sight that is currently suffering from Burn. They clear 1d6 Burn and you take the same amount of Burn. The target then takes AP energy damage equal to the Burn cleared.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      },
+      {
+        "name": "Thermal Apetite",
+        "activation": "Quick Tech",
+        "detail": "<div>You link your reactor to feed from the heat generated by an allied character within range 5 and line of sight. This link lasts until either character becomes Jammed, Overheats or you dismiss it as a free action. When the target takes heat from its own systems while the link is active, you may reduce the heat they take by 1 and take 1 heat yourself. You may have only 1 active link at a time.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_bubblegrenade",
+    "name": "TYPE-9 Chrysalis Charges",
+    "source": "KIE",
+    "license": "SCARAB",
+    "license_level": 1,
+    "effect": "<div>Spend a charge for one of the following effects:</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div><em>The Chrysalis charges were originally developed as backup batteries to store the excess energy generated by the shield projectors of Hive Protectors. With some modifications, these became able to release the energy stored within as a pulse of energy that immediately coats all nearby surfaces as an extra layer of protection.</em></div>",
+    "tags": [
+      {
+        "id": "tg_shield",
+        "val": null
+      },
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Chrysalis Grenade",
+        "activation": "Quick",
+        "detail": "<div>All Characters within the affected area gain 2 Overshield.</div>",
+        "pilot": false,
+        "range": [
+          {
+            "type": "Range",
+            "val": "5"
+          },
+          {
+            "type": "Blast",
+            "val": "2"
+          }
+        ],
+        "synergy_locations": [
+          "system"
+        ],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Chrysalis Investiture",
+        "type": "Mine",
+        "detail": "<div>When an allied character moves over or adjacent to this mine, you can cause it to burst and surround them with a protective energy field as a reaction. The target gains 5 Overshield and benefits from Soft Cover while this Overshield lasts.</div>",
+        "size": 0.5,
+        "activation": "Move",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false
+      }
+    ]
+  },
+  {
+    "id": "kie_antlion",
+    "name": "\"Antlion\" Charges",
+    "source": "KIE",
+    "license": "STAG",
+    "license_level": 2,
+    "effect": "<div>Expend a charge for one of the following effects:</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div><em>Used to mine, extract, transport and crush pieces of mineral ore or cave in debris, the Power Pickaxe is a class of mining equipment issued to almost all Rubble excavation crews, used mostly to transport valuable materials back for collection, while also being able to dispose of less, desirable minerals.</em></div>",
+    "tags": [
+      {
+        "id": "tg_deployable"
+      },
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "\"Antlion\" Grenade",
+        "activation": "Quick",
+        "detail": "<div>Characters in the blast area must succeed on an AGILITY Save or be pulled adjacent, or as close as possible, to the center of the blast.</div>",
+        "pilot": false,
+        "range": [
+          {
+            "type": "Range",
+            "val": "5"
+          },
+          {
+            "type": "Blast",
+            "val": "2"
+          }
+        ],
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ],
+    "deployables": [
+      {
+        "name": "\"Antilion\" Mine",
+        "type": "Mine",
+        "detail": "<div>After arming, the next hostile character to move adjacent to the mine must succeed on an AGILITY Save or become GRAPPLED by the mine, which counts as a size 3 character when grappling. This Mine can be activated as a Quick Action after it is armed. When it does so, it may move up to 3 spaces towards a hostile character and detonates if it ends this movement adjacent to an hostile character. You then take 1 Heat. Only one Antlion mine can be manually activated on your turn.</div><div>While at least one Antlion Charge is grappling a character, you take 1 Heat at the end of each of your turns.</div><div>When this system Grapples a hostile character, they count as being Grappled by you for the purposes of traits, talents, or systems.</div>",
+        "size": 0.5,
+        "activation": "",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "",
+        "evasion": "",
+        "edef": "",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "\"Antlion\" Mine manual Detonation",
+            "activation": "Quick",
+            "detail": "<div>Manually detonate your \"Antlion\" mine, moving them 3 spaces towards an hostile character before detonating if adjacent to them.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_trapjaw",
+    "name": "\"Trapjaw\" Drone",
+    "source": "KIE",
+    "license": "STAG",
+    "license_level": 2,
+    "effect": "<div></div>",
+    "type": "Drone",
+    "sp": "2",
+    "description": "<div><em>Strength in numbers is common Rubblefolk philosophy, and no worker knows this better than the miners of Jovo. The trapjaw drone is part of the many methods used by the Rubblefolk to keep local megafauna at bay. Capable of limited self-piloting, the Trapjaw drone applies incredible force with its smaller scale Cargo clamps to subdue aggressive attackers, holding them down until dispatched or taken down.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Trapjaw Drone",
+        "type": "Drone",
+        "detail": "<div>The Drone may move independently on your turn. When a hostile character starts their turn within Range 3 of the Trapjaw Drone, the Drone moves adjacent to them and forces the target to make an Agility Save or else become Grappled by the Drone. While Grappled by the Trapjaw Drone, the target takes 3 AP Kinetic Damage at the start of each of their turns. You can order the Trapjaw drone to let go of a target as a free action.</div><div>The Trapjaw Drone counts as Size 2 for the sake of Grappling. The Trapjaw cannot grapple more than one character at a time, but may give up its current target for a new one if it would be triggered.</div>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "",
+        "redeploy": "Quick",
+        "instances": 1,
+        "cost": 1,
+        "armor": "1",
+        "hp": "10",
+        "evasion": "10",
+        "edef": "10",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "3",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Move Command",
+            "activation": "Free",
+            "detail": "<div>The Trapjaw drone moves up to its speed in a direction of your choice.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_hc_nestsentinel",
+    "name": "HiveMind Command: “Nest Sentinel”",
+    "source": "KIE",
+    "license": "STAG",
+    "license_level": 3,
+    "effect": "<div>When you or an allied character within Hivemind range hits a character with a melee attack, allied characters within Hivemind range of the attacker may use a reaction to Boost directly towards the target of the triggering attack. This effect can be triggered any number of times on a turn or round, but each character can only use this reaction to Boost 1/round.</div><div>HiveMind Commands are not self-aware enough to enter a Cascade state. They are also unable to take control of a mech as a protocol.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "<div><em>This HiveMind program is designed to counter surprise intrusions by local fauna via high-speed synchronization of their sensor feeds, but works equally well against Mechs.</em></div>",
+    "tags": [
+      {
+        "id": "kie_hivemind"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_no_cascade",
+        "val": null
+      }
+    ]
+  },
+  {
+    "id": "kie_tremor",
+    "name": "TREMOR MINING PAYLOAD",
+    "source": "KIE",
+    "license": "HERCULES",
+    "license_level": 2,
+    "effect": "<div>1/Round, when you destroy a terrain piece, object or deployable, you can expend one charge of this system to create a Burst 1 zone of exploding debris centered on the destroyed object. Characters within the affected area must pass an Agility save or take 1d6+2 Explosive damage, taking half damage on a pass.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div><em>Favored by demolitionists, the Tremor Charges are a specialized set of submunitions used to maximize the force released by shaped explosives. Rarely used in combat, most “Hive Wreckers” employ these charges to bust plasma-wing nests wide open for extermination, and are known to be used in a similar manner with other invasive megafauna.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_limited",
+        "val": "2"
+      }
+    ]
+  },
+  {
+    "id": "kie_targetting",
+    "name": "HiveMind Command: “Optimized Targeting”",
+    "source": "KIE",
+    "license": "HERCULES",
+    "license_level": 3,
+    "effect": "<div>Ranged weapons of Allied characters within HiveMind Range have their Range by +3 Range, if they possess any Range.</div><div>Melee and CQB weapons of Allied characters within HiveMind Range have their Threat increased by +1, if they possess Threat.</div><div>HiveMind Commands are not self-aware enough to enter a Cascade state. They are also unable to take control of a mech as a protocol.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "",
+    "tags": [
+      {
+        "id": "kie_hivemind"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_no_cascade",
+        "val": null
+      }
+    ]
+  },
+  {
+    "id": "Kie_HC_hive_hazard",
+    "name": "HiveMind Command: “Hazard Control\"",
+    "source": "KIE",
+    "license": "FIREFLY",
+    "license_level": 3,
+    "effect": "<div>When you or an allied character within Hivemind Range makes an Engineering check to clear Burn at the end of their turn, they may roll twice and choose either result. Additionally, gain the “Hazard Control” Reaction.</div>",
+    "type": "AI",
+    "sp": "3",
+    "description": "<div><em>KIE engineers quickly learned what internal components of a frame are the most susceptible to puncture-caused immolation after being forced to repair overzealous Fireflies. They documented their findings and uploaded them as an extensive data pack for militarized frames to use, being able to exploit these engineering weak spots within hostile targets or preemptively compensate for their failings as needed.</em></div>",
+    "tags": [
+      {
+        "id": "kie_hivemind"
+      },
+      {
+        "id": "tg_unique"
+      },
+      {
+        "id": "tg_no_cascade",
+        "val": 0
+      }
+    ],
+    "actions": [
+      {
+        "name": "Hazard Control",
+        "activation": "Reaction",
+        "detail": "<div>Apply an additional effect based on the total of their roll:</div><ul><li><div><strong>0 or Less:</strong> The target takes 1d6 Burn, and becomes Impaired and Slowed until the end of their next turn.</div></li></ul><ul><li><div><strong>1-9: </strong>The target becomes Slowed and Impaired until the end of their next turn.</div></li></ul><ul><li><div><strong>10-19: </strong>The target may Boost as a reaction. This movement ignores reactions and engagement.</div></li></ul><ul><li><div><strong>20+: </strong>The target gains 3 Overshield and may Boost as a reaction. This movement ignores reactions and engagement.</div></li></ul>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>You or another character has rolled an Engineering check to clear burn at the end of their turn.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_hug",
+    "name": "Snapper's Handshake",
+    "source": "KIE",
+    "license": "STAG",
+    "license_level": 1,
+    "effect": "<div>Characters Grappled by you suffer +2 Difficulty on all attacks made against characters other than you.</div>",
+    "type": "System",
+    "sp": "2",
+    "description": "<div><em>\"There's a reason as to why Miners always salute and never shake hands\" - Prospector Isaac, Rubble Miner.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ]
+  },
+  {
+    "id": "kie_black_cauldron",
+    "name": "“Black Cauldron” Ambrosia Habitat",
+    "source": "KIE",
+    "license": "WEEVIL",
+    "license_level": 1,
+    "effect": "<div>At the end of a rest, you may regain up to 1d3 of your spent repairs.</div>",
+    "type": "System",
+    "sp": "3",
+    "description": "<div><em>Dubbed “Black Cauldron” or “Lunchbox”, the Portable Ambrosia Habitat works as a means for scrappers to turn most broken metals and biomatter into any material they might require to repair their frames, given enough time and access to fresh materials.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "synergies": [
+      {
+        "locations": [
+          "repair"
+        ],
+        "detail": "<div>At the end of a rest, you may regain up to 1d3 of your spent repairs.</div>",
+        "weapon_types": [],
+        "weapon_sizes": [],
+        "system_types": []
+      }
+    ]
+  },
+  {
+    "id": "kie_spareparts",
+    "name": "Spare Parts Storage",
+    "source": "KIE",
+    "license": "WEEVIL",
+    "license_level": 2,
+    "type": "System",
+    "sp": "3",
+    "description": "<div><em>“Oh, you know… figured I’d just pack some extra plating, nano-gel, maybe some duct tape too. Never hurts.” - Tyze Kyre, Rubblefolk Salvager and Field Mechanic</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "actions": [
+      {
+        "name": "Spare Parts",
+        "activation": "Full",
+        "detail": "<div>1/ Mission, you may activate this system to destroy it and cause up to 3 of the following effects on yourself or an adjacent ally:</div><div>- Repair 1 Structure or Stress damage<br>- Repair 1 a destroyed weapon or system<br>- Replenish up to 2 charges of a Limited system or weapon</div><div>You may pick the same option more than once and can choose to apply them to the same target or different ones. Once destroyed, regardless if it was activated or destroyed by other means, this system cannot be repaired.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_homeostasis",
+    "name": "Force Homeostasis",
+    "source": "KIE",
+    "license": "WEEVIL",
+    "license_level": 3,
+    "effect": "<div></div>",
+    "type": "Tech",
+    "sp": "3",
+    "description": "<div><em>As part of the biomechanical elements of Rubbleborn technology, the nanite-based cells and organs that make up their mechs are capable of maintaining a level of homeostasis akin to a biological organism. Like the organisms they copy, trauma and other ailments can knock this homeostasis out of alignment, but technological systems are able to correct this given enough time. Knowledge of these biomechanic systems can be translated to most frames with some minor modifications.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 1
+      }
+    ],
+    "actions": [
+      {
+        "name": "Force Homeostasis",
+        "activation": "Quick Tech",
+        "detail": "<div>Expend a charge to choose one allied character within sensors and line of sight. The target can make an Engineering check to clear any condition, making a separate check for each condition and taking 1 heat for each condition successfully cleared.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_phoenix",
+    "name": "“Phoenix” Thermal Veil",
+    "source": "KIE",
+    "license": "FIREFLY",
+    "license_id": "kie_firefly",
+    "license_level": 2,
+    "effect": "<div>Gain the “Immortal Wings” reaction.</div>",
+    "type": "Shield",
+    "sp": "3",
+    "description": "<div><em>The Firefly's prototype- the Incandis, or “Glowfly”- was notorious for its \"leaking\" reactor due to a fault in the shielding plates. The Firefly weaponizes this tendency to create a sight and trajectory disruption field that fully wreathes the user, but the modification can be put on any frame with the proper tools.</em></div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      },
+      {
+        "id": "tg_limited",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Immortal Wings",
+        "activation": "Reaction",
+        "detail": "<div>Expend a charge to gain resistance to Energy damage, Heat and Burn dealt by the attack. Additionally, the attacker must succeed on an Engineering save or take 2 Heat and 2 Burn.</div>",
+        "cost": "1",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>You take damage from a melee attack.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_soldier_drone_one",
+    "name": "Soldier Drone I",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "type": "Drone",
+    "sp": "0",
+    "description": "<div>Gained from the Wrangler: Rank I pilot talent.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Soldier Drone",
+        "type": "Drone",
+        "detail": "<div>This Drone has enough space to fit a single AUX weapon available to you, which you choose when deploying the drone.  The weapon’s threat, cone, burst, line, blast and range is reduced to 3, unless already lower, if the weapon has the Unique property it can only be installed in either your mech or a soldier drone, not both, and any SP cost is subtracted from your mech’s SP limit (NOTE: This feature is unsupported by Comp/Con, instead you can write the weapons in the notes section of the Drone, creating custom counters for their limited uses, and accounting for SP accordingly). This weapon cannot be modified and doesn't benefit from your talents, traits or core bonuses.</div></li></ul>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "10",
+        "evasion": "8",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "4",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Soldier Drone Command",
+            "activation": "Protocol",
+            "detail": "<div>You order the Solier Drone to move up to its speed in a direction of your choosing.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "Soldier Drone Attack Order",
+            "activation": "Reaction",
+            "detail": "<div>You order your Soldier Drone to attack your target with its weapons.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "You score a critical hit against a target within the drone weapon’s range"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_soldier_drone_two",
+    "name": "Soldier Drone II",
+    "source": "",
+    "license": "",
+    "license_level": 0,
+    "type": "Drone",
+    "sp": "0",
+    "description": "<div>Gained from the Wrangler: Rank II pilot talent.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Soldier Drone II",
+        "type": "Drone",
+        "detail": "<div>This Drone has enough space to fit a single AUX weapon available to you, which you choose when deploying the drone.  The weapon’s threat, cone, burst, line, blast and range is reduced to 3, unless already lower, if the weapon has the Unique property it can only be installed in either your mech or a soldier drone, not both, and any SP cost is subtracted from your mech’s SP limit (NOTE: This feature is unsupported by Comp/Con, instead you can write the weapons in the notes section of the Drone, creating custom counters for their limited uses, and accounting for SP accordingly). This weapon cannot be modified and doesn't benefit from your talents, traits or core bonuses. <div></div>Additionally, when you deploy this drone, choose one of the following Configurations to grant a unique bonus to your Soldier Drone: Assault, Stealth, Recon or Maintenance.</div></div><ul><li><div>Assault: The drone’s mount is upgraded to a FLEX mount.</div></li></ul><ul><li><div>Stealth: The drone is permanently Invisible, and is able to Hide after it moves. </div></li></ul><ul><li><div>Recon: The drone gains a sensor range of 5, and you may order it to Scan instead of moving</div></li></ul><ul><li><div>Maintenance: At the end of your turn, a character adjacent to the drone of your choice may clear 1 Heat or gain 2 Overshield.</div></li></ul>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "10",
+        "evasion": "8",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "4",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Soldier Drone Command",
+            "activation": "Protocol",
+            "detail": "<div>You order the Solier Drone to move up to its speed in a direction of your choosing.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "Soldier Drone Attack Order",
+            "activation": "Reaction",
+            "detail": "<div>You order your Soldier Drone to attack your target with its weapons.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "You score a critical hit against a target within the drone weapon’s range"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_soldier_drone_three",
+    "name": "Soldier Drone III",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "type": "Drone",
+    "sp": "0",
+    "description": "<div>Gained from the Wrangler: Rank III pilot talent.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "val": null
+      }
+    ],
+    "deployables": [
+      {
+        "name": "Soldier Drone III",
+        "type": "Drone",
+        "detail": "<div>This Drone has enough space to fit a single AUX weapon available to you, which you choose when deploying the drone.  The weapon’s threat, cone, burst, line, blast and range is reduced to 3, unless already lower, if the weapon has the Unique property it can only be installed in either your mech or a soldier drone, not both, and any SP cost is subtracted from your mech’s SP limit (NOTE: This feature is unsupported by Comp/Con, instead you can write the weapons in the notes section of the Drone, creating custom counters for their limited uses, and accounting for SP accordingly). This weapon cannot be modified and doesn't benefit from your talents, traits or core bonuses.<div></div> Additionally, when you deploy this drone, choose one of the following Configurations to grant a unique bonus to your Soldier Drone: Assault, Stealth, Recon or Maintenance.</div></div><ul><li><div>Assault: The drone’s mount is upgraded to a FLEX mount.</div></li></ul><ul><li><div>Stealth: The drone is permanently Invisible, and is able to Hide after it moves. </div></li></ul><ul><li><div>Recon: The drone gains a sensor range of 5, and you may order it to Scan instead of moving</div></li></ul><ul><li><div>Maintenance: At the end of your turn, a character adjacent to the drone of your choice may clear 1 Heat or gain 2 Overshield.</div></li></ul><div>Lastly, 1/mission, you can deploy two Soldier drones instead of one. Each of these drones can use a different configuration and set of weapons. You can give the same or different orders to each one of these drones, and the limit of the reaction attack increases to 2/round, one for each drone.</div>",
+        "size": 0.5,
+        "activation": "Quick",
+        "deactivation": "",
+        "recall": "Quick",
+        "redeploy": "",
+        "instances": 1,
+        "cost": 1,
+        "armor": "",
+        "hp": "10",
+        "evasion": "8",
+        "edef": "8",
+        "heatcap": "",
+        "repcap": "",
+        "sensor_range": "",
+        "tech_attack": "",
+        "save": "",
+        "speed": "4",
+        "pilot": false,
+        "mech": false,
+        "actions": [
+          {
+            "name": "Soldier Drone Command",
+            "activation": "Protocol",
+            "detail": "<div>You order the Solier Drone to move up to its speed in a direction of your choosing.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "Unlimited",
+            "init": "",
+            "trigger": ""
+          },
+          {
+            "name": "Soldier Drone Attack Order",
+            "activation": "Reaction",
+            "detail": "<div>You order your Soldier Drone to attack your target with its weapons.</div>",
+            "pilot": false,
+            "synergy_locations": [],
+            "tech_attack": false,
+            "frequency": "1/round",
+            "init": "",
+            "trigger": "You score a critical hit against a target within the drone weapon’s range"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "kie_gadget_spikes",
+    "name": "Gadget: Spiked Plating",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "effect": "<div>1/round, when you successfully Grapple, Ram or make an Improvised Attack, you may spend a charge as a free action. If you do so, your target takes 2 AP Kinetic damage and becomes Impaired until the end of their next turn.</div>",
+    "type": "System",
+    "sp": "0",
+    "description": "<div>Gained from the Artisan talent.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Spiked Grasp",
+        "activation": "Free",
+        "detail": "<div>1/round, when you successfully Grapple, Ram or make an Improvised Attack, you may spend a charge as a free action. If you do so, your target takes 2 AP Kinetic damage and becomes Impaired until the end of their next turn.</div>",
+        "pilot": false,
+        "synergy_locations": [
+          "ram",
+          "grapple",
+          "improvised_attack"
+        ],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_gadget_jets",
+    "name": "Gadget: Improvised Jump Jets",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "type": "System",
+    "sp": "0",
+    "description": "<div>Gained from the Artisan talent.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ],
+    "actions": [
+      {
+        "name": "Improvised Jump Jets",
+        "activation": "Protocol",
+        "detail": "<div>Spend a charge to fly 3 spaces in a straight line.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "Unlimited",
+        "init": "",
+        "trigger": ""
+      }
+    ]
+  },
+  {
+    "id": "kie_gadget_scramblers",
+    "name": "Gadget: Jury-Rigged Scramblers",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "type": "System",
+    "sp": "0",
+    "description": "<div>Gained from the Artisan talent.</div>",
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      },
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Scrambling Signal",
+        "activation": "Reaction",
+        "detail": "<div>You may spend a charge to scramble their computers. If you do so, that character suffers +1 Difficulty on the triggering roll, and if it fails, they take 2 Heat.</div>",
+        "pilot": false,
+        "synergy_locations": [],
+        "tech_attack": false,
+        "frequency": "1/round",
+        "init": "",
+        "trigger": "<div>A character within sensors makes a Tech Attack, Systems save, or Systems check.</div>"
+      }
+    ]
+  },
+  {
+    "id": "kie_gadget_coolant",
+    "name": "Gadget: Homebrewed Coolant",
+    "source": "",
+    "license": "",
+    "license_id": "",
+    "license_level": 1,
+    "effect": "<div>When you Overcharge, you may spend a charge of this system (no action required) to reroll the Heat generated and choose the either result.</div>",
+    "type": "System",
+    "sp": "0",
+    "description": "<div>Gained from the Artisan talent.</div>",
+    "tags": [
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated – each character can only have one copy of it installed at a time."
+      },
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as “charges”. To use the system, the user expends a charge.",
+        "val": 2
+      }
+    ]
+  }
+]
