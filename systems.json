@@ -561,25 +561,28 @@
     ]
   },
   {
-    "id": "kie_trapjaw",
-    "name": "\"Trapjaw\" Drone",
+    "id": "kie_Snapjaw",
+    "name": "\"Snapjaw\" Drone",
     "source": "KIE",
     "license": "STAG",
     "license_level": 2,
     "effect": "<div></div>",
     "type": "Drone",
     "sp": "2",
-    "description": "<div><em>Strength in numbers is common Rubblefolk philosophy, and no worker knows this better than the miners of Jovo. The trapjaw drone is part of the many methods used by the Rubblefolk to keep local megafauna at bay. Capable of limited self-piloting, the Trapjaw drone applies incredible force with its smaller scale Cargo clamps to subdue aggressive attackers, holding them down until dispatched or taken down.</em></div>",
+    "description": "<div><em>Strength in numbers is common Rubblefolk philosophy, and no worker knows this better than the miners of Jovo. The Snapjaw drone is part of the many methods used by the Rubblefolk to keep local megafauna at bay. Capable of limited self-piloting, the Snapjaw drone applies incredible force with its smaller scale Cargo clamps to subdue aggressive attackers, holding them down until dispatched or taken down.</em></div>",
     "tags": [
+      {
+        "id": "kie_hivemind"
+      },
       {
         "id": "tg_unique"
       }
     ],
     "deployables": [
       {
-        "name": "Trapjaw Drone",
+        "name": "Snapjaw Drone",
         "type": "Drone",
-        "detail": "<div>The Drone may move independently on your turn. When a hostile character starts their turn within Range 3 of the Trapjaw Drone, the Drone moves adjacent to them and forces the target to make an Agility Save or else become Grappled by the Drone. While Grappled by the Trapjaw Drone, the target takes 3 AP Kinetic Damage at the start of each of their turns. You can order the Trapjaw drone to let go of a target as a free action.</div><div>The Trapjaw Drone counts as Size 2 for the sake of Grappling. The Trapjaw cannot grapple more than one character at a time, but may give up its current target for a new one if it would be triggered.</div>",
+        "detail": "<div>The Drone may move independently on your turn. When a hostile character starts their turn within Range 3 of the Snapjaw Drone, the Drone moves adjacent to them and forces the target to make an Agility Save or else become Grappled by the Drone. While Grappled by the Snapjaw Drone, the target takes 3 AP Kinetic Damage at the start of each of their turns. You can order the Snapjaw drone to let go of a target as a free action.</div><div>The Snapjaw Drone counts as Size 2 for the sake of Grappling. The Snapjaw cannot grapple more than one character at a time, but may give up its current target for a new one if it would be triggered. The Snapjaw Drone uses your Hull and Agility when making contested Checks to maintain control of the grapple.</div>",
         "size": 0.5,
         "activation": "Quick",
         "deactivation": "",
@@ -603,7 +606,7 @@
           {
             "name": "Move Command",
             "activation": "Free",
-            "detail": "<div>The Trapjaw drone moves up to its speed in a direction of your choice.</div>",
+            "detail": "<div>The Snapjaw drone moves up to its speed in a direction of your choice.</div>",
             "pilot": false,
             "synergy_locations": [],
             "tech_attack": false,
@@ -769,19 +772,16 @@
     "license": "WEEVIL",
     "license_level": 2,
     "type": "System",
-    "sp": "3",
+    "sp": "1",
     "description": "<div><em>“Oh, you know… figured I’d just pack some extra plating, nano-gel, maybe some duct tape too. Never hurts.” - Tyze Kyre, Rubblefolk Salvager and Field Mechanic</em></div>",
     "tags": [
-      {
-        "id": "tg_unique",
-        "val": null
-      }
+      {}
     ],
     "actions": [
       {
         "name": "Spare Parts",
-        "activation": "Full",
-        "detail": "<div>1/ Mission, you may activate this system to destroy it and cause up to 3 of the following effects on yourself or an adjacent ally:</div><div>- Repair 1 Structure or Stress damage<br>- Repair 1 a destroyed weapon or system<br>- Replenish up to 2 charges of a Limited system or weapon</div><div>You may pick the same option more than once and can choose to apply them to the same target or different ones. Once destroyed, regardless if it was activated or destroyed by other means, this system cannot be repaired.</div>",
+        "activation": "Quick",
+        "detail": "<div>When you activate this system, select either yourself or an adjacent willing character. This system is destroyed and you can cause one of the following effects on the chosen character:</div><div>- The target clears 1 condition not caused by their own systems, traits, etc.<br>- The target regains up to 2 charges of one Limited system or weapon.<br>- The target repairs all destroyed weapons on a single mount or a single system.<br>- The target regains HP equal to half their maximum HP.<br>- The target clears the Exposed status and clears Heat up to an amount equal to half their Heat Cap./div><div>This system can only be used once before each Full Repair, and is not a valid target for system destruction.</div>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
