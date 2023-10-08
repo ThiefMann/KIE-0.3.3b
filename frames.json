@@ -696,7 +696,7 @@
       {
         "name": "Too Big To Care",
         "use": "",
-        "description": "<div>The Hercules can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters. Additionally, the Hercules has +1 ACC on Checks and Saves against being knocked Prone or Knocked Back, and any Knockback taken is halved.</div>"
+        "description": "<div>The Hercules can’t be pushed, pulled, knocked Prone, or knocked back by smaller characters. Additionally, any Involuntary Movement caused by hostile characters against the Hercules is halved.</div>"
       }
     ],
     "core_system": {
