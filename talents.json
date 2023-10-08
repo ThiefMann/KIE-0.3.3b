@@ -7,7 +7,7 @@
     "ranks": [
       {
         "name": "Personal Touch",
-        "description": "<div>When you print your mech or complete a Full Repair, you can print a Gadget. This is a Limited System with 2 charges that cannot be destroyed. When printing a Gadget, choose one from the following options: Spiked Plating, Improvised Jump Jets, Jury-Rigged Scramblers, Homebrewed Coolant.</div><div>At your GM’s discretion, you may design your own Gadget to use with this talent.</div>",
+        "description": "<div>When you print your mech or complete a Full Repair, you can print a Gadget. This is a Limited System with 2 charges that cannot be destroyed. When printing a Gadget, choose one from the following options: Spiked Plating, Improvised Jump Jets, Jury-Rigged Scramblers, Homebrewed Coolant.</div><div>At your GMâ€™s discretion, you may design your own Gadget to use with this talent.</div>",
         "special_equipment": [
           "kie_gadget_spikes",
           "kie_gadget_jets",
@@ -78,7 +78,7 @@
   },
   {
     "id": "kie_Legion",
-    "name": "Comraderie",
+    "name": "Camaraderie",
     "terse": "Increase the firepower of your team with coordinated tactics and techniques.",
     "description": "<div><em>HiveMind technology has been acquired by Chartered Companies and other factions on Jovo, and its capabilities for coordination have both combat and utility uses. While rolled out slowly and carefully, the link between small groups of individuals can allow for rapid and complex maneuvers to be pulled off with minimal training.</em></div><div><em>These \"Comrades” share a deep bond that goes more than merely psychological. Perhaps you were assigned a new partner, replacing a previous one, or you two have served side-by-side, and come Hell or high water, you will be as immovable as the earth under your feet.</em></div>",
     "ranks": [
