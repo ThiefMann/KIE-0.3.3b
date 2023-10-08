@@ -377,7 +377,7 @@
       {
         "name": "Burn To Cinders",
         "activation": "Quick Tech",
-        "detail": "<div>Select a character within Sensors with any amount of Burn marked. They clear 1d6 Burn and you take the same amount of Burn. The target then takes AP energy damage equal to the Burn cleared.</div>",
+        "detail": "<div>Select a character within Sensors that is suffering any amount of Burn. They clear 1d6 Burn and you take the same amount of Burn. The target then takes AP energy damage equal to the Burn cleared.</div>",
         "pilot": false,
         "synergy_locations": [],
         "tech_attack": false,
