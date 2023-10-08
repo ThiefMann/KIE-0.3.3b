@@ -4,12 +4,14 @@
     "name": "Type-8 Combat Shield",
     "source": "KIE",
     "license": "SCARAB",
+    "license_id": "kie_scarab",
     "license_level": 2,
-    "description": "<div><em>Originally designed as a reinforcement for solar panels, failure to contain the excess energy led experimental engineers to abandon the project. It is unknown how the discarded prototypes reached Scarab’s hands, but the now designated Type-8 Combat Shield serves as a close-quarters option able to capitalize the excess flow of energy within the frame to create controlled blasts in response to physical trauma. Models issued to other frames are fitted with the same nanite colonies present in the Scarab hardware, granting them the ability to generate small defensive barriers over the Type-8’s surface</em></div>",
-    "effect": "<div>Gain the “Retribution” reaction.</div>",
-    "on_hit": "You or an adjacent allied character gain 2 Overshield",
+    "description": "<div><em>Originally designed as a reinforcement for solar panels by KIE-COL/Ring, failure to contain the excess energy led experimental engineers to abandon the project. It is unknown how the discarded prototypes reached Scarabâ€™s hands, but the now designated Type-8 Combat Shield serves as a close-quarters option able to capitalize the excess flow of energy within the frame to create controlled blasts in response to physical trauma. Models issued to other frames are fitted with the same nanite colonies present in the Scarab hardware, granting them the ability to generate small defensive barriers over the Type-8â€™s surface.</em></div>",
     "mount": "Main",
     "type": "Melee",
+    "sp": "1",
+    "effect": "<div>Gain the â€œRetributionâ€ reaction.</div>",
+    "on_hit": "You or an adjacent allied character gain 2 Overshield",
     "damage": [
       {
         "type": "Energy",
@@ -22,15 +24,6 @@
         "val": 1
       }
     ],
-    "sp": "1",
-    "tags": [
-      {
-        "id": "tg_shield"
-      },
-      {
-        "id": "tg_unique"
-      }
-    ],
     "actions": [
       {
         "name": "Retribution",
@@ -41,21 +34,30 @@
         "tech_attack": false,
         "frequency": "1/Round",
         "init": "",
-        "trigger": "You are targeted by a melee attack while you have Overshield."
+        "trigger": "<div>You or an adjacent character are targeted by a melee attack while you have Overshield.</div>"
       }
     ],
-    "profiles": []
+    "tags": [
+      {
+        "id": "tg_shield"
+      },
+      {
+        "id": "tg_unique"
+      }
+    ]
   },
   {
     "id": "kie_type12",
     "name": "Type-12 Particle Manipulator",
     "source": "KIE",
     "license": "SCARAB",
+    "license_id": "kie_scarab",
     "license_level": 3,
     "description": "<div><em>The Particle Manipulator was originally a mining scanner, but modifications done to the tool allowed it to create an energy wavelength and catalytic magnetic pulse. This can be used to compact ores, or used for extraction in parts of veins that are more delicate. Similar technology was used to create the Inorganic Particle Disruptor. In combat, the manipulator is also able to compress and stagger mechanical targets for a short time.</em></div>",
-    "on_crit": "Your target must succeed a Systems save or become Immobilized and Jammed until the end of their next turn. A character can only become Jammed by this effect 1/scene.",
     "mount": "Main",
     "type": "Rifle",
+    "sp": "1",
+    "on_crit": "Your target must succeed a Systems save or become Immobilized and Jammed until the end of their next turn. A character can only become Jammed by this effect 1/scene.",
     "damage": [
       {
         "type": "Energy",
@@ -66,12 +68,6 @@
       {
         "type": "Range",
         "val": 8
-      }
-    ],
-    "sp": "1",
-    "tags": [
-      {
-        "id": "tg_unique"
       }
     ],
     "actions": [
@@ -87,21 +83,27 @@
         "trigger": "You or an allied character within Sensors are targeted by a ranged attack."
       }
     ],
-    "profiles": []
+    "tags": [
+      {
+        "id": "tg_unique"
+      }
+    ]
   },
   {
     "id": "kie_banebless",
     "name": "Bane/Bless Nexus",
     "source": "KIE",
     "license": "LONGHORN",
+    "license_id": "kie_longhorn",
     "license_level": 1,
-    "description": "<div><em>The heavily modified Bane/Bless nanite pattern differs from other automated munitions used by the Rubblefolk, running a binary-state code that grants it the versatility of a frame’s full computer network.</em></div><div><em>Upon a successful breach, the Bane/Bless code is able to briefly control the target’s system, allowing the user to further sabotage or transfer data to allies. Whether this was developed for combat or to further enforce the Longhorn’s role as a chess arbiter is unknown.</em></div>",
-    "on_crit": "<div>Choose one effect:&nbsp;</div><ul><li><div>The target becomes Impaired until the end of their next turn.</div></li><li><div>You may Bolster an ally within range as a Free Action.</div></li></ul>",
+    "description": "<div><em>The heavily-modified Bane/Bless nano-cell pattern differs from other automated munitions used by the Rubblefolk, running a binary-state code that grants it the versatility of a frameâ€™s full computer network.</em></div><div><em>Upon a successful breach, the Bane/Bless code is able to briefly control the targetâ€™s system, allowing the user to further sabotage or transfer data to allies. Whether this was developed for combat or to further enforce the Longhornâ€™s role as a chess arbiter is unknown.</em></div>",
     "mount": "Main",
     "type": "Nexus",
-    "cost": 1,
+    "sp": "1",
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_crit": "<div>Choose one effect:&nbsp;</div><ul><li><div>The target becomes Impaired until the end of their next turn.</div></li><li><div>You may Bolster an ally within range as a Free Action.</div></li></ul>",
     "damage": [
       {
         "type": "Kinetic",
@@ -114,7 +116,6 @@
         "val": 10
       }
     ],
-    "sp": "1",
     "tags": [
       {
         "id": "tg_accurate"
@@ -122,22 +123,23 @@
       {
         "id": "tg_smart"
       }
-    ],
-    "profiles": []
+    ]
   },
   {
     "id": "kie_plasma_drill",
     "name": "Plasma Drill",
     "source": "KIE",
     "license": "FIREFLY",
+    "license_id": "kie_firefly",
     "license_level": 1,
     "description": "<div><em>A repurposed mining implement, the Plasma Drill is exactly what it sounds like: an unsafe plasma projector capable of creating a concentrated plasma beam for use in the mines.</em></div>",
-    "on_hit": "Heat generated by this weapon’s Overkill tag is also dealt to the target as bonus heat.",
     "mount": "Main",
     "type": "Cannon",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_hit": "Heat generated by this weaponâ€™s Overkill tag is also dealt to the target as bonus heat.",
     "damage": [
       {
         "type": "Energy",
@@ -150,7 +152,6 @@
         "val": "5"
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_overkill"
@@ -159,23 +160,24 @@
         "id": "tg_heat_self",
         "val": "1"
       }
-    ],
-    "profiles": []
+    ]
   },
   {
     "id": "kie_fart",
     "name": "Volatile Exhaust",
     "source": "KIE",
     "license": "FIREFLY",
+    "license_id": "kie_firefly",
     "license_level": 2,
-    "description": "",
-    "effect": "<div>This weapon ignores ranged penalties from engagement.</div>",
-    "on_hit": "<div>This weapon deals energy damage equal to half your current heat, up to a maximum of 4 energy damage.</div>",
+    "description": "<div><em>More of a failsafe than a weapon, the â€œVolatile Exhaustâ€ modification is a fancy name for a set of strategically distributed, high-pressure valve punctures that allow nuclear steam to escape the peripheral reactor feed.</em></div>",
     "mount": "Auxiliary",
     "type": "CQB",
-    "cost": 1,
+    "sp": 0,
+    "effect": "<div>This weapon ignores ranged penalties from engagement.</div>",
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_hit": "<div>This weapon deals energy damage equal to half your current heat, up to a maximum of 4 energy damage.</div>",
     "damage": [
       {
         "type": "Energy",
@@ -187,24 +189,24 @@
         "type": "Burst",
         "val": "1"
       }
-    ],
-    "sp": 0,
-    "profiles": []
+    ]
   },
   {
     "id": "kie_laser_cutter",
     "name": "Laser Cutter",
     "source": "KIE",
     "license": "FIREFLY",
+    "license_id": "kie_firefly",
     "license_level": 3,
     "description": "<div><em>The Laser Cutter was used by many Jovo miners to salvage lost or damaged equipment. The Rubblefolk have adapted and optimized it, increasing its thermal output and accuracy for military specifications.</em></div>",
-    "on_hit": "<div>If the target is already suffering from Burn, damage dealt by this weapon cannot be reduced in any way.</div>",
-    "on_crit": "<div>You may take 1 additional Heat to deal +1d6 bonus Burn.</div>",
     "mount": "Heavy",
     "type": "CQB",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_hit": "<div>If the target is already suffering from Burn, damage dealt by this weapon cannot be reduced in any way.</div>",
+    "on_crit": "<div>You may take 1 additional Heat to deal +1d6 bonus Burn.</div>",
     "damage": [
       {
         "type": "Energy",
@@ -225,28 +227,28 @@
         "val": "3"
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_heat_self",
         "val": "2"
       }
-    ],
-    "profiles": []
+    ]
   },
   {
     "id": "kie_pickaxe",
     "name": "Mandible Power-Pickaxe",
     "source": "KIE",
     "license": "STAG",
+    "license_id": "kie_stag",
     "license_level": 1,
     "description": "<div><em>Used to mine, extract, transport and crush pieces of mineral ore or cave in debris, the Power Pickaxe is a class of mining equipment issued to almost all Rubble excavation crews, used mostly to transport valuable materials back for collection, while also being able to dispose of less desirable minerals.</em></div>",
-    "on_hit": "<div>This weapon deals 10 AP kinetic damage against terrain pieces, deployables, and objects instead of the normal damage.</div>",
     "mount": "Heavy",
     "type": "Melee",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_hit": "<div>This weapon deals 10 AP kinetic damage against terrain pieces, deployables, and objects instead of the normal damage.</div>",
     "damage": [
       {
         "type": "Kinetic",
@@ -263,26 +265,26 @@
         "val": "3"
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_overkill"
       }
-    ],
-    "profiles": []
+    ]
   },
   {
     "id": "kie_lucanidae",
     "name": "Lucanidae Cargo Manipulator",
     "source": "KIE",
     "license": "STAG",
+    "license_id": "kie_stag",
     "license_level": 3,
-    "description": "<div><em>An extendable armature tipped with a grasping claw, the “Lucanidae” Cargo Manipulator is designed for moving heavy objects at a distance. It is held together by rigid nano-ligaments, while artificial musculature operates the internal skeleton.</em></div>",
-    "on_crit": "<div>Pull your target to a free space adjacent to you, or as close as possible. If they end this movement adjacent to you, you may Grapple or Ram them as a free action immediately after the attack resolves.</div>",
+    "description": "<div><em>An extendable armature tipped with a grasping claw, the â€œLucanidaeâ€ Cargo Manipulator is designed for moving heavy objects at a distance. It is held together by rigid nano-ligaments, while artificial musculature operates the internal skeleton.</em></div>",
     "mount": "Superheavy",
     "type": "Melee",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
+    "cost": 1,
+    "on_crit": "<div>Pull your target to a free space adjacent to you, or as close as possible. If they end this movement adjacent to you, you may Grapple or Ram them as a free action immediately after the attack resolves.</div>",
     "damage": [
       {
         "type": "Kinetic",
@@ -293,15 +295,6 @@
       {
         "type": "Threat",
         "val": "3"
-      }
-    ],
-    "sp": 0,
-    "tags": [
-      {
-        "id": "tg_overkill"
-      },
-      {
-        "id": "kie_eusocial"
       }
     ],
     "actions": [
@@ -317,21 +310,25 @@
         "trigger": ""
       }
     ],
-    "profiles": []
+    "tags": [
+      {
+        "id": "tg_overkill"
+      },
+      {
+        "id": "kie_eusocial"
+      }
+    ]
   },
   {
     "id": "kie_hiexdet",
     "name": "HI-EX Det Launcher",
     "source": "KIE",
     "license": "HERCULES",
+    "license_id": "kie_hercules",
     "license_level": 1,
     "description": "<div><em>A binary-chamber missile launcher, the HI-EX Det Launcher is a rudimentary form of weapon engineering used to combine two modes of payload delivery under a single frame. Light munitions can be fired through an adjustable mechanism that reduces the diameter of the chamber and barrel, allowing a faster reload time at the cost of power; while the dilated mode allows heavier munitions to be delivered when needed, at the expense of a longer delay between munition cycling.</em></div>",
-    "on_attack": "<div></div>",
     "mount": "Main",
     "type": "Launcher",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
     "sp": 0,
     "profiles": [
       {
@@ -394,22 +391,18 @@
     "name": "PD-Deterrence Battery",
     "source": "KIE",
     "license": "HERCULES",
+    "license_id": "kie_hercules",
     "license_level": 2,
-    "description": "<div><em>A necessity on excavation sites near territorial megafauna, the Point-Defense Deterrence Battery proves a vital piece of equipment not only for the Mining Rig’s survival, but for the entire crew on board as well. Concentrated volleys are able to produce incredible force, and are known to send particularly aggressive invaders flying away if they survive the explosive blast.</em></div>",
-    "on_attack": "<div></div>",
-    "on_crit": "<div>This weapon’s Knockback tag increases to 3.</div>",
+    "description": "<div><em>A necessity on excavation sites near territorial megafauna, the Point-Defense Deterrence Battery proves a vital piece of equipment not only for the Mining Rigâ€™s survival, but for the entire crew on board as well. Concentrated volleys are able to produce incredible force, and are known to send particularly aggressive invaders flying away if they survive the explosive blast.</em></div>",
     "mount": "Main",
     "type": "Launcher",
-    "cost": 1,
-    "barrage": true,
-    "skirmish": true,
     "sp": 0,
     "profiles": [
       {
         "name": "Area Denial Mode",
         "description": "",
         "effect": "<div>This weapon can be fired on either the Area Denial or Focused Blast mode.</div>",
-        "on_crit": "<div>This weapon’s Knockback tag increases to 3.</div>",
+        "on_crit": "<div>This weaponâ€™s Knockback tag increases to 3.</div>",
         "type": "",
         "cost": 1,
         "damage": [
@@ -439,7 +432,7 @@
         "name": "Focused Blast Mode",
         "description": "",
         "effect": "<div>This weapon can be fired on either the Area Denial or Focused Blast mode.</div>",
-        "on_crit": "<div>This weapon’s Knockback tag increases to 3.</div>",
+        "on_crit": "<div>This weaponâ€™s Knockback tag increases to 3.</div>",
         "type": "Launcher",
         "cost": 1,
         "damage": [
@@ -472,19 +465,18 @@
     "name": "T3G/P PADRINO",
     "source": "KIE",
     "license": "HERCULES",
+    "license_id": "kie_hercules",
     "license_level": 3,
-    "description": "<div>Lovingly nicknamed the “Godfather” by its users, the Type-3 Grenade/Projector is a simplistic piece of kit designed to be used to clear large cave-ins, while more militarized models are used to clear entire megafauna dens with fragmentation charges. With the use of “Quick/Switch” structure, both modes can be fitted into a single frame, requiring only minimal modifications.</div>",
+    "description": "<div><em>Lovingly nicknamed the â€œGodfatherâ€ by its users (perhaps as some sort of in-joke or reference to Project HERCULES involving overworlders as consultants), the Type-3 Grenade/Projector is a simplistic piece of kit designed to be used to clear large cave-ins, while more militarized models are used to clear entire megafauna dens with fragmentation charges. Based on an ancestral weapon design used by ancient Rubbleborn, the Type-3 Grenade/Projector uses nano-cell force fields to contain plasma in spherical shells which crack open on impact, proximity, or a predetermined distance. When charged, a massive volley can be unleashed, carving through anything in its way. With the use of â€œQuick/Switchâ€ structure, both modes can be fitted into a single frame, requiring only minimal modifications. The firing mechanism uses a repulsor force-field rather than any chemical or magnetic propulsion, allowing it to be used in practically any environment.</em></div>",
     "mount": "Superheavy",
     "type": "Cannon",
-    "cost": 1,
-    "barrage": true,
     "sp": 0,
     "profiles": [
       {
         "name": "Uncharged",
         "description": "",
-        "effect": "<div>As a Quick Action, you may focus excess energy directly into the Padrino’s energy feed to charge it. At the start of any of your turns while it is charged, it has the Charged profile.</div>",
-        "on_attack": "<div>Terrain pieces, objects and deployables are hit automatically and take 20AP Energy damage instead of the normal damage.</div>",
+        "effect": "<div>As a Quick Action, you may focus excess energy directly into the Padrinoâ€™s energy feed to charge it. At the start of any of your turns while it is charged, it has the Charged profile.</div>",
+        "on_attack": "<div>Terrain pieces, objects and deployables are hit automatically and take 10AP Energy damage instead of the normal damage.</div>",
         "type": "Cannon",
         "cost": 1,
         "damage": [
@@ -530,7 +522,7 @@
         "name": "Charged",
         "description": "",
         "effect": "<div>This weapon loses its charge when you Barrage with it, when you disperse its charge as a free action, or when you become STUNNED or SHUT DOWN.</div>",
-        "on_attack": "<div>You may treat this weapon’s Line range as 3 spaces wide, with at least one space of the centre line being adjacent to you. Terrain pieces, objects and deployables are hit automatically and take 40AP Energy damage instead of the normal damage.</div>",
+        "on_attack": "<div>You may treat this weaponâ€™s Line range as 3 spaces wide, with at least one space of the center line being adjacent to you. Terrain pieces, objects and deployables are hit automatically and take 40AP Energy damage instead of the normal damage.</div>",
         "type": "Cannon",
         "cost": 1,
         "damage": [
@@ -572,13 +564,15 @@
     "name": "Bugshot Shredder",
     "source": "KIE",
     "license": "WEEVIL",
+    "license_id": "kie_weevil",
     "license_level": 1,
     "description": "<div><em>Usually a wrist-mounted shrapnel-cannon, the Bugshot Shredder is an oddity within the typical Weevil equipment. It is unknown what use this tool would serve, some indicating the smaller frames would need such equipment to defend themselves from pests that predate within the ambrosia farms.</em></div>",
     "mount": "Auxiliary",
     "type": "CQB",
-    "cost": 1,
+    "sp": 0,
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
     "damage": [
       {
         "type": "Kinetic",
@@ -591,28 +585,28 @@
         "val": "3"
       }
     ],
-    "sp": 0,
     "tags": [
       {
         "id": "tg_limited",
         "val": 5
       }
-    ],
-    "profiles": []
+    ]
   },
   {
     "id": "kie_scrapper_nexus",
     "name": "Scrapper Nexus",
     "source": "KIE",
     "license": "WEEVIL",
+    "license_id": "kie_weevil",
     "license_level": 2,
-    "description": "<div><em>Built for scrapping existing equipment, Scrapper Nexuses hold colonies of drones and nanites that break down organic and metallic materials alike, to later be synthesized into usable components.</em></div>",
-    "on_crit": "<div>Your target must Succeed on a Hull save or take maximum possible damage (including bonus damage). Pass or fail, you regain 1 spent Repair.</div>",
+    "description": "<div><em>Built for scrapping existing equipment, Scrapper Nexuses hold colonies of nano-constructs that break down organic and metallic materials alike, to later be synthesized into usable components.</em></div>",
     "mount": "Main",
     "type": "Nexus",
-    "cost": 1,
+    "sp": "2",
     "barrage": true,
     "skirmish": true,
+    "cost": 1,
+    "on_crit": "<div>Your target must Succeed on a Hull save or take maximum possible damage (including bonus damage). Pass or fail, you regain 1 spent Repair.</div>",
     "damage": [
       {
         "type": "Kinetic",
@@ -625,7 +619,6 @@
         "val": "10"
       }
     ],
-    "sp": "2",
     "tags": [
       {
         "id": "tg_seeking",
@@ -638,8 +631,298 @@
       {
         "id": "tg_limited",
         "val": 3
+      },
+      {
+        "id": "tg_unique",
+        "name": "UNIQUE",
+        "description": "This weapon or system cannot be duplicated â€“ each character can only have one copy of it installed at a time."
+      }
+    ]
+  },
+  {
+    "id": "kie_repulsor",
+    "name": "Repulsor Gun",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>The Repulsor Gun is a homegrown weapon pattern created by Ringfolk for anti-debris and counter-boarding purposes. By manipulating a nanocell force-fieldâ€™s rapid collapse, the resulting kinetic energy can be emitted outwards towards a target. These have found some level of success as exports to other groups around the system, and Union Directorate personnel have requested them for bodyguard use. The newest models are compatible with GMS standards and printers. The most recent update to these weapons' nano-genetic codes allows for improved compatibility with GMS-standard targeting software.</em></div>",
+    "mount": "Main",
+    "type": "CQB",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6"
       }
     ],
-    "profiles": []
+    "range": [
+      {
+        "type": "Range",
+        "val": 6
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "HEAT {VAL} (SELF)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "name": "KNOCKBACK {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "kie_repulsor_cannon",
+    "name": "Repulsor Cannon",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>Repulsor Cannons are heavier, bulkier versions of Repulsor Guns. Rather than firing a beam, Repulsor Cannons release the kinetic energy in a cone-shaped wave, which has proven to be effective against swarms of megafauna and Typhonspawn.</em></div>",
+    "mount": "Heavy",
+    "type": "CQB",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "1d6+3"
+      }
+    ],
+    "range": [
+      {
+        "type": "Cone",
+        "val": 5
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_heat_self",
+        "name": "HEAT {VAL} (SELF)",
+        "description": "Immediately after using this weapon or system, the user takes {VAL} Heat.",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "name": "KNOCKBACK {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "kie_arrow",
+    "name": "Arrow Missile Battery",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>Usually installed over a mechâ€™s shoulder, across sections of plating, or carried inside a multi-barreled platform, the Arrow Missile Battery is a proven design, able to fire HEAT projectiles with minimum recoil or wear to the user. Created by Hunter Cadres as part of a recent push towards militia equipment or other warfighting capabilities, the Arrow is a paradigm shift in what is considered acceptable for KIEâ€™s development branches to produce. The flexibility of the platform has made it an oddly popular choice among Weevils and prototype \"Metriini\" frames of the Rubble's Hunter Cadres. DOJ/HR agents have also adopted the weapon pattern for their own use in anti-Typhonspawn operations.</em></div>",
+    "mount": "Main",
+    "type": "Launcher",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "1d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 10
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as â€œchargesâ€. To use the system, the user expends a charge.",
+        "val": 8
+      },
+      {
+        "id": "tg_arcing",
+        "name": "ARCING",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon donâ€™t require line of sight, as long as itâ€™s possible to trace a path to the target; however, they are still affected by cover."
+      }
+    ]
+  },
+  {
+    "id": "kie_stinger",
+    "name": "\"Stinger\" Heavy Missile Battery",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>Originally a clandestine upscaling of the standard Arrow Missile Battery designed by the Hunter Cadre, the Stinger battery is loaded with microwarheads, modified for both Air-to-Ground and Air-to-Air combat roles. The increase of payload power comes with the cost of reduced space, meaning a reduced number of projectiles can be loaded on the platform, even with an increase in available surface. As with many field-modified or Improvised platforms, Union Directorate personnel in Camp Fireside would obtain the schematics in exchange for materials and bring the weapons up to GMS standard.</em></div>",
+    "mount": "Heavy",
+    "type": "Launcher",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6+2"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_limited",
+        "name": "LIMITED {VAL}",
+        "description": "This weapon or system can only be used {VAL} times before it requires a Full Repair. Some Limited systems, like Grenades, describe these uses as â€œchargesâ€. To use the system, the user expends a charge.",
+        "val": 6
+      },
+      {
+        "id": "tg_arcing",
+        "name": "ARCING",
+        "description": "This weapon can be fired over obstacles, usually by lobbing a projectile in an arc. Attacks made with this weapon donâ€™t require line of sight, as long as itâ€™s possible to trace a path to the target; however, they are still affected by cover."
+      }
+    ]
+  },
+  {
+    "id": "kie_demo",
+    "name": "Quakeshock Demolition Weapon",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>Usually unbalanced and clunky, the first Demolition Weapons- given the name â€œQuakeshocksâ€ by their creators- were developed by founding members of Protector Cadre Felspar in the Rubble's ancient past. Heavily-customized, no Quakeshock is alike, and the most ancient Protector Cadres have inherited their equipment from their predecessors. Meant to crush and break the heavily armored chitin of invasive megafauna, rather than just pierce it, Demolition weapons have been assigned to Hunter and Protector Cadres alike across the history of the Rubble. Union Directorate personnel in Camp Fireside would obtain the schematics in exchange for materials and bring the weapons up to GMS standard.</em></div>",
+    "mount": "Main",
+    "type": "Melee",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate",
+        "name": "INACCURATE",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "RELIABLE {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 1
+      },
+      {
+        "id": "tg_knockback",
+        "name": "KNOCKBACK {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 2
+      }
+    ]
+  },
+  {
+    "id": "kie_bigdemo",
+    "name": "Earthbreaker Demolition Weapon",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>Often called â€œEarthbreakersâ€, the Heavy Demolition Weapons are a central component of Protector Cadres, usually bearing great ornaments, inscriptions of century-old alliances and symbols of great deeds. This doesn't stop the mass production of the weapon pattern by KIE-OWD, though these GMS-pattern models are often just upscaled versions of the standard Demolition Weapon.</em></div>",
+    "mount": "Heavy",
+    "type": "Melee",
+    "sp": 0,
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Explosive",
+        "val": "3d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Threat",
+        "val": 1
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_inaccurate",
+        "name": "INACCURATE",
+        "description": "Attacks made with this weapon receive +1 Difficulty."
+      },
+      {
+        "id": "tg_reliable",
+        "name": "RELIABLE {VAL}",
+        "description": "This weapon has some degree of self-correction or is simply powerful enough to cause damage even with a glancing blow. It always does {VAL} damage, even if it misses its target or rolls less damage. Reliable damage inherits other tags (such as AP) and base damage type but not tags that require a hit, such as Knockback.",
+        "val": 2
+      },
+      {
+        "id": "tg_knockback",
+        "name": "KNOCKBACK {VAL}",
+        "description": "On a hit, the user may choose to knock their target {VAL} spaces in a straight line directly away from the point of origin (e.g., the attacking mech or the center of a Blast). Multiple Knockback effects stack with each other. This means that an attack made with a Knockback 1 weapon and a talent that grants Knockback 1 counts as having Knockback 2.",
+        "val": 4
+      }
+    ]
+  },
+  {
+    "id": "kie_communist_nexus",
+    "name": "Commune/Colony Nexus",
+    "source": "GMS",
+    "license": "",
+    "license_id": "",
+    "license_level": 0,
+    "description": "<div><em>The Commune/Colony Nexus originates from messenger nano-constructs used to ferry data-packets and physical objects across the Rubble in its early days. The first Protector Cadres would also discover that they could be used to deliver small plasma spheres to discourage megafauna intrusions. The newest models Commune/Colony Nexus use a special strain of nano-construction that are compatible with most communications systems, bringing them up to GMS standards.</em></div>",
+    "mount": "Heavy",
+    "type": "Nexus",
+    "sp": "1",
+    "barrage": true,
+    "skirmish": true,
+    "damage": [
+      {
+        "type": "Energy",
+        "val": "2d6"
+      }
+    ],
+    "range": [
+      {
+        "type": "Range",
+        "val": 15
+      }
+    ],
+    "tags": [
+      {
+        "id": "tg_smart",
+        "name": "SMART",
+        "description": "This weapon has self-guidance systems, self-propelled projectiles, or even nanorobotic ammunition. These systems are effective enough that its attacks canâ€™t simply be dodged â€“ they must be scrambled or jammed. Because of this, all attacks with this weapon â€“ including melee and ranged attacks â€“ use the targetâ€™s E-Defense instead of Evasion. Targets with no E-Defense count as having 8 E-Defense."
+      },
+      {
+        "id": "kie_eusocial",
+        "name": "EUSOCIAL",
+        "description": "<div>Any Action or Reaction granted by an EUSOCIAL system can be activated by an adjacent allied character, as long as you allow them to do so. Eusocial weapons can be used to Skirmish or Barrage by adjacent allies as if they had them installed. The owner spends charges and takes heat generated by the system or weapon as normal, while the user provides its own talents, traits, core bonuses and other modifiers for the instance of use.</div><div>If an action or reaction granted by an Eusocial system or weapon has a use limitation, it is shared between all characters. For example, if a character activates an Eusocial system with a limitation of 1/round, that system cannot be activated (either by its owner or through Eusocial), until the start of that character's next turn.</div>"
+      }
+    ]
   }
 ]
