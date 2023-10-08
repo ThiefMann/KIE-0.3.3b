@@ -40,7 +40,7 @@
     "mounted_effect": "",
     "actions": [
       {
-        "name": "Scavenger's Instincts",
+        "name": "Salvager's Instincts",
         "activation": "Reaction",
         "detail": "<div> You may Salvage some of its components, choosing one of the following Salvage options. Each Salvage option can only be selected once per Scene.</div><div>- <strong>Salvage Supplies: </strong>Regain 1 spent Repair or 1 spent Limited Charge of a single Limited system or weapon.&nbsp;</div><div>- <strong>Salvage Plating: </strong>The next time you take Damage from a hostile character, you gain Resistance to that damage.</div><div>- <strong>Salvage Data-Drives: </strong>All other Hostile Characters lose Hidden until the start of your next turn, then you may Scan and Lock On to the nearest hostile character as a part of this reaction (choose a single character if there is more than one).</div>",
         "pilot": false,
